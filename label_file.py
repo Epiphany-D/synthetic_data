@@ -1,8 +1,11 @@
 import base64
 import json
 import os.path
+
 import numpy as np
-#from shape_tool import is_smallpolygon_covered_by_largeone
+
+
+# from shape_tool import is_smallpolygon_covered_by_largeone
 
 class LabelFileError(Exception):
     pass
@@ -151,7 +154,7 @@ class LabelFile(object):
             if shape['label'].find('gene:') >= 0:
                 try:
                     id, _, gene_name = str(shape['label']).split(':')
-                    gene_id_and_names.update({id : gene_name})
+                    gene_id_and_names.update({id: gene_name})
                 except:
                     pass
         return gene_id_and_names
@@ -204,7 +207,6 @@ class LabelFile(object):
                 only_one_relation_symbo = True
         return False
 
-
     # def get_sub_box_in_relationship(self, current_shape):
     #     #get its involving entity names
     #     #content = shape['label'].split(':',1)[1]
@@ -219,15 +221,14 @@ class LabelFile(object):
     #     else:
     #         return None
 
-
     def get_duplicated_genes(self):
         duplicated_genes = {}
         gene_names = self.get_all_genes()
         gene_set = set(gene_names)
         for gene in gene_set:
-           gene_count = gene_names.count(gene)
-           if gene_count > 1:
-                duplicated_genes.update({gene : self.get_duplicated_gene_IDs(gene)})
+            gene_count = gene_names.count(gene)
+            if gene_count > 1:
+                duplicated_genes.update({gene: self.get_duplicated_gene_IDs(gene)})
         return duplicated_genes
 
     def get_duplicated_gene_IDs(self, query_gene_name):
@@ -256,7 +257,7 @@ class LabelFile(object):
         correct_results = []
         for shape in self.shapes:
             category, content = shape['label'].split(':', 1)
-            coords = np.array (shape['points'], np.int)
+            coords = np.array(shape['points'], np.int)
             if category == 'gene':
                 predict_temp = 'text\t'
                 correct_temp = '0@' + content + '@'
@@ -266,7 +267,9 @@ class LabelFile(object):
                     predict_temp += str(coords[1][0]) + ',' + str(coords[0][1]) + ','
                     predict_temp += str(coords[1][0]) + ',' + str(coords[1][1]) + ','
                     predict_temp += str(coords[0][0]) + ',' + str(coords[1][1]) + '\n'
-                    correct_temp += str([[coords[0][0], coords[0][1]], [coords[1][0], coords[0][1]],[coords[1][0], coords[1][1]], [coords[0][0], coords[1][1]]]) + '\n'
+                    correct_temp += str(
+                        [[coords[0][0], coords[0][1]], [coords[1][0], coords[0][1]], [coords[1][0], coords[1][1]],
+                         [coords[0][0], coords[1][1]]]) + '\n'
                 else:
                     predict_temp += str(coords[0][0]) + ',' + str(coords[0][1]) + ','
                     predict_temp += str(coords[1][0]) + ',' + str(coords[1][1]) + ','
@@ -283,13 +286,14 @@ class LabelFile(object):
                     predict_temp += str(coords[1][0]) + ',' + str(coords[0][1]) + ','
                     predict_temp += str(coords[1][0]) + ',' + str(coords[1][1]) + ','
                     predict_temp += str(coords[0][0]) + ',' + str(coords[1][1]) + '\n'
-                    #correct_temp += str([[coords[0][0], coords[0][1]], [coords[1][0], coords[0][1]],[coords[1][0], coords[1][1]], [coords[0][0], coords[1][1]]]) + '\n'
+                    # correct_temp += str([[coords[0][0], coords[0][1]], [coords[1][0], coords[0][1]],[coords[1][0],
+                    # coords[1][1]], [coords[0][0], coords[1][1]]]) + '\n'
                 else:
                     predict_temp += str(coords[0][0]) + ',' + str(coords[0][1]) + ','
                     predict_temp += str(coords[1][0]) + ',' + str(coords[1][1]) + ','
                     predict_temp += str(coords[2][0]) + ',' + str(coords[2][1]) + ','
                     predict_temp += str(coords[3][0]) + ',' + str(coords[3][1]) + '\n'
-                    #correct_temp += str(shape['points']) + '\n'
+                    # correct_temp += str(shape['points']) + '\n'
                 predict_results.append(predict_temp)
             elif category == 'activate':
                 predict_temp = 'arrow\t'
@@ -309,9 +313,11 @@ class LabelFile(object):
                 continue
 
             image_name, image_ext = os.path.splitext(self.imagePath)
-        with open(os.path.join(r'C:\Users\coffe\Desktop\test\export', image_name + '_0.6_predict.txt'),'w') as predict_fp:
+        with open(os.path.join(r'C:\Users\coffe\Desktop\test\export', image_name + '_0.6_predict.txt'),
+                  'w') as predict_fp:
             predict_fp.writelines(predict_results)
-        with open(os.path.join(r'C:\Users\coffe\Desktop\test\export', image_name + '_0.6_correct.txt'),'w') as correct_fp:
+        with open(os.path.join(r'C:\Users\coffe\Desktop\test\export', image_name + '_0.6_correct.txt'),
+                  'w') as correct_fp:
             correct_fp.writelines(correct_results)
 
     def get_max_shape_id(self):
@@ -320,31 +326,31 @@ class LabelFile(object):
             try:
                 current_id = int(LabelFile.get_shape_index(shape))
             except:
-                #if cannot get numeric id, maybe lack of saving index to the 'label' part
+                # if cannot get numeric id, maybe lack of saving index to the 'label' part
                 # then try next shapr
                 continue
-            if  current_id > max_id:
+            if current_id > max_id:
                 max_id = current_id
         return max_id
 
     def get_index_with_id(self, id):
         for index, shape in enumerate(self.shapes):
-            if  LabelFile.get_shape_index(shape) == int(id):
+            if LabelFile.get_shape_index(shape) == int(id):
                 return index
-        raise Exception('cannot find id:' +  str(id) + ' shape')
+        raise Exception('cannot find id:' + str(id) + ' shape')
 
     def reset(self):
         new_shapes = []
         for i, shape in enumerate(self.shapes):
-            if not str(str(shape['label'])).split(':',1)[0].isdigit():
+            if not str(str(shape['label'])).split(':', 1)[0].isdigit():
                 shape['label'] = str(i) + ':' + str(shape['label'])
 
             shape['line_color'] = None
             shape['fill_color'] = None
-            #only keep element shapes
+            # only keep element shapes
             if LabelFile.get_shape_category(shape) == 'gene' or \
-               LabelFile.get_shape_category(shape) == 'activate' or \
-               LabelFile.get_shape_category(shape) == 'inhibit':
+                    LabelFile.get_shape_category(shape) == 'activate' or \
+                    LabelFile.get_shape_category(shape) == 'inhibit':
                 new_shapes.append(shape)
         self.shapes = new_shapes
 
@@ -356,18 +362,17 @@ class LabelFile(object):
 
     def generate_category_id(self, shape, category_list):
         try:
-            if LabelFile.get_shape_category(shape)== 'gene':
+            if LabelFile.get_shape_category(shape) == 'gene':
                 return 1
-            elif LabelFile.get_shape_category(shape)== 'activate' :
+            elif LabelFile.get_shape_category(shape) == 'activate':
                 return 0
-            elif LabelFile.get_shape_category(shape)== 'inhibit':
+            elif LabelFile.get_shape_category(shape) == 'inhibit':
                 return 2
 
             else:
                 raise Exception('the shape ' + shape['label'] + ' in file ' + self.filename + ' has invalid category')
         except:
-            raise Exception('the shape '+ shape['label'] + ' in file ' + self.filename + ' has invalid category')
-
+            raise Exception('the shape ' + shape['label'] + ' in file ' + self.filename + ' has invalid category')
 
     @staticmethod
     def isLabelFile(filename):
@@ -403,7 +408,6 @@ if __name__ == '__main__':
         else:
             json_data = LabelFile(os.path.join(ground_truth_folder, json_file))
             json_data.export_predict_correct_txt()
-
 
     # with open(os.path.join(ground_truth_folder, 'gene_list.txt'),'w') as
     # gene_fp:
