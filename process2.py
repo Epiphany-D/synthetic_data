@@ -135,7 +135,7 @@ def draw_spline(self, img, x_span, y_span):
         Return:
             img (np.Array): updated image with spline
             f (float): slope of spline at interested end
-            orientation (int): prevailing cardinal direction of spline at interested end
+            orientation (int): prevailing cardinal direction nof spline at interested end
             spline_bbox (list): 2D-list with bbox corners for spline as [[x,y],[x,y]]
             
     '''
@@ -231,7 +231,7 @@ def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
 
         if self.indicator == INHIBIT:
             triangle_cnt = np.array([pt1, pt3])
-            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.inhibit_tickness)
+            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.thickness + 2)
         else:
             triangle_cnt = np.array([pt1, pt2, pt3])
             cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, -1)
@@ -289,18 +289,18 @@ def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
 
         if self.indicator == INHIBIT:
             triangle_cnt = np.array([pt1, pt3])
-            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.inhibit_tickness)
+            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.thickness + 2)
         else:
             triangle_cnt = np.array([pt1, pt2, pt3])
             cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, -1)
 
     # get bbox dims for corresponding indicator
     if self.indicator == INHIBIT:
-        min_x = min([pt1[0], pt3[0]]) - self.inhibit_tickness
-        min_y = min([pt1[1], pt3[1]]) - self.inhibit_tickness
+        min_x = min([pt1[0], pt3[0]]) - self.thickness + 2
+        min_y = min([pt1[1], pt3[1]]) - self.thickness + 2
 
-        max_x = max([pt1[0], pt3[0]]) + self.inhibit_tickness
-        max_y = max([pt1[1], pt3[1]]) + self.inhibit_tickness
+        max_x = max([pt1[0], pt3[0]]) + self.thickness + 2
+        max_y = max([pt1[1], pt3[1]]) + self.thickness + 2
     else:
         min_x = min([pt1[0], pt2[0], pt3[0]])
         min_y = min([pt1[1], pt2[1], pt3[1]])
@@ -325,11 +325,11 @@ def draw_textbox(self, img, label, location, w, h):
             location (list): contains target center of entity bbox as [x,y]
             w (int): contains target x dim of text to place
             h (int): contains target y dim of text to place
-        
+
         Return:
             img (np.Array): updated image with entities
             bbox (list): 2D-list with bbox corners for spline and indicator as [[x,y],[x,y]]
-            
+
     '''
 
     # location is center
@@ -360,14 +360,14 @@ def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbo
             self: contains hyperparameter config
             img (np.Array): copied template image for stitching
             entity1_center (list): contains target center of entity1 bbox as [entity1_center_x,entity1_center_y]
-            entity2_center (list): contains target center of entity2 bbox as [entity2_center_x,entity2_center_y]  
+            entity2_center (list): contains target center of entity2 bbox as [entity2_center_x,entity2_center_y]
             entity1_bbox (list): 2D-list with entity1 bbox corners as [[x,y],[x,y]]
             entity2_bbox (list): 2D-list with entity2 bbox corners as [[x,y],[x,y]]
-        
+
         Return:
             x_span (np.Array): x-dim anchor points for spline
             y_span (np.Array): y-dim anchor points for spline
-            
+
     '''
 
     # Dataset
@@ -429,13 +429,13 @@ def draw_relationship(self, img, entity1_center, entity2_center, text1_shape, te
             entity2_center (list): contains target center of entity2 bbox as [entity2_center_x,entity2_center_y]
             text1_shape (list): contains target dimensions of text to place as [w1,h1]
             text2_shape (list): contains target dimensions of text to place as [w2,h2]
-            label1 (str): text to place as entity1 
-            label2 (str): text to place as entity2     
-        
+            label1 (str): text to place as entity1
+            label2 (str): text to place as entity2
+
         Return:
             img (np.Array): updated image with entities, spline, and indicator drawn on it
             relationship_bbox (list): 2D-list with bbox corners for spline and indicator as [[min_x,min_y],[max_x,min_y],[max_x,max_y],[min_x,max_y]]
-            
+
     '''
 
     w1, h1 = text1_shape
@@ -468,10 +468,10 @@ def radial_profile(data, center):
         Args:
             data (np.Array): input 'image'
             center (list): center coordinates [y,x] of 'image'
-        
+
         Return:
-            radialprofile (np.Array): contains normalized sum of binned pixel values from center by radius 
-            
+            radialprofile (np.Array): contains normalized sum of binned pixel values from center by radius
+
     '''
 
     y, x = np.indices(data.shape)
@@ -498,18 +498,18 @@ def check_slice(template_im, slice_shape, x, y, padding=0):
             slice_shape (list): contains dimensions of target region as [x_dim,y_dim]
             x (int): interested location top-left corner x
             y (int): interested location top-left corner y
-            padding (int): optional extra spacing arround region  
-        
+            padding (int): optional extra spacing arround region
+
         Return:
             (bool): indicates if region is good or not
-            
+
     '''
 
     threshold = 50
 
     template_slice = template_im[y - padding:y + slice_shape[1] + padding, x - padding:x + slice_shape[0] + padding, :]
 
-    # if all pixels are the same, then don't even have to run the rest of check 
+    # if all pixels are the same, then don't even have to run the rest of check
     if np.all(template_slice == template_slice[0, 0, 0]):
         return True
 
@@ -543,17 +543,17 @@ def get_entity_placement(self, slice_shape, x_target, y_target, label1, label2):
         Args:
             self: contains hyperparameter config
             slice_shape (list): contains dimensions of target region as [x_dim,y_dim]
-            x_target (int): top-left corner x placement location 
-            y_target (int): top-left corner y placement location 
-            label1 (str): text to place as entity1 
-            label2 (str): text to place as entity2     
-        
+            x_target (int): top-left corner x placement location
+            y_target (int): top-left corner y placement location
+            label1 (str): text to place as entity1
+            label2 (str): text to place as entity2
+
         Return:
             entity1_center (list): contains target center of entity1 bbox as [entity1_center_x,entity1_center_y]
             entity2_center (list): contains target center of entity2 bbox as [entity2_center_x,entity2_center_y]
             text1_shape (list): contains target dimensions of text to place as [w1,h1]
             text2_shape (list): contains target dimensions of text to place as [w2,h2]
-            
+
     '''
 
     # For the text background
@@ -613,7 +613,7 @@ class template_thread(threading.Thread):
 
         '''
 
-        Start 4 threads for generating x# samples from same templates at once 
+        Start 4 threads for generating x# samples from same templates at once
 
         '''
 
@@ -672,20 +672,20 @@ class copy_thread(threading.Thread):
         #  color at thickness and fill
 
         self.font_style = cv2.FONT_HERSHEY_SIMPLEX
-        self.font_size = 0.6
+        self.font_size = random.randint(5, 8) * 0.1
         self.padding = 0
-        self.thickness = 4
+        self.thickness = random.randint(2, 4)
         self.tip_len = 10
         self.base_len = 20
         self.text_margin = 10
-        self.arrow_placement = END
-        self.arrow_color = (0, 0, 0)
-        self.textbox_background = (0, 0, 230)
+        self.arrow_placement = random.choice([START, END])
+        self.arrow_color = (255, 128, 76)
+        self.textbox_background = (176, 224, 230)
         self.textbox_border_thickness = 1
         self.text_color = (0, 0, 0)
         self.text_thickness = 1
-        self.indicator = INHIBIT
-        self.inhibit_tickness = 6  # here
+        self.indicator = random.choice([INHIBIT, ACTIVATE])
+        # self.boarder = self.thickness + 1
 
     def run(self):
 
@@ -782,12 +782,15 @@ class copy_thread(threading.Thread):
                     indicator_shape = copy.deepcopy(base_shape)
                     indicator_shape['points'] = relationship_bbox
                     indicator_shape['ID'] = element_indx
-                    if self.indicator == INHIBIT:
-                        indicator_shape['label'] = str(element_indx) + ":inhibit:" + str(
-                            label1_shape['ID']) + "|" + str(label2_shape['ID'])
+                    if self.arrow_placement == START:
+                        id2id_str = str(label2_shape['ID']) + "|" + str(label1_shape['ID'])
                     else:
-                        indicator_shape['label'] = str(element_indx) + ":activate:" + str(
-                            label1_shape['ID']) + "|" + str(label2_shape['ID'])
+                        id2id_str = str(label1_shape['ID']) + "|" + str(label2_shape['ID'])
+
+                    if self.indicator == INHIBIT:
+                        indicator_shape['label'] = str(element_indx) + ":inhibit:" + id2id_str
+                    else:
+                        indicator_shape['label'] = str(element_indx) + ":activate:" + id2id_str
                     element_indx += 1
 
                     shapes.append(label1_shape)
@@ -852,7 +855,15 @@ def populate_figures():
         thread3.join()
 
 
+def clear_output():
+    # clear the output_test
+    for file in os.listdir("output_test"):
+        file = os.path.join("output_test", file)
+        os.remove(file)
+
+
 if __name__ == "__main__":
     # TODO:: lower high-freq threshold based on colors being used for entities and arrows
     #  another interesting idea would be to include targeted noise (i.e. lines with no indicator connecting no entities)
+    clear_output()
     populate_figures()
