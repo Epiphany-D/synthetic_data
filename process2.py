@@ -34,18 +34,18 @@ def randomword(length):
 
 
 def check_orientation(source_point, comparison_pt):
-    '''
+    """
 
         get prevailing cardinal direction of spline at interested end
 
         Args:
             source_point (list): last point on interested end of spline used as reference as [x,y]
             comparison_pt (list): spline point used as reference for deterimining slope [x,y]
-        
+
         Return:
             orientation (int): prevailing cardinal direction of spline at interested end
-            
-    '''
+
+    """
 
     # check orientation
     # look at prevailing dimension of change
@@ -66,7 +66,7 @@ def check_orientation(source_point, comparison_pt):
 
 
 def get_slope(self, base_points, source_point, x_span, y_span):
-    '''
+    """
 
         draws spline between entities
 
@@ -76,20 +76,23 @@ def get_slope(self, base_points, source_point, x_span, y_span):
             source_point (list): last point on interested end of spline used as reference as [x,y]
             x_span (np.Array): x-dim anchor points for spline
             y_span (np.Array): y-dim anchor points for spline
-        
+
         Return:
             f (float): slope of spline at interested end
             comparison_pt (list): spline point used as reference for deterimining slope [x,y]
-            
-    '''
+
+    """
 
     # select distinct and nth closest
     max_idx = base_points.shape[0] - 1
     comparison_pt = None
     dist = 50
     # lag used to set which point along spline off of entity do we want to select as comparison point
-    lag = 10
+
+    # lag = 10
+    lag = int(0.1 * max_idx)
     # TODO:: dynamically adjust lag length based on # samples here
+
     candidate_points = []
     candidate_dists = []
     for idx in range(0, max_idx - 1, 1):
@@ -131,13 +134,13 @@ def draw_spline(self, img, x_span, y_span):
             img (np.Array): copied template image for stitching
             x_span (np.Array): x-dim anchor points for spline
             y_span (np.Array): y-dim anchor points for spline
-        
+
         Return:
             img (np.Array): updated image with spline
             f (float): slope of spline at interested end
-            orientation (int): prevailing cardinal direction nof spline at interested end
+            orientation (int): prevailing cardinal direction of spline at interested end
             spline_bbox (list): 2D-list with bbox corners for spline as [[x,y],[x,y]]
-            
+
     '''
 
     # get full spline (base_points) from anchor points (x_span,y_span)
@@ -182,7 +185,7 @@ def draw_spline(self, img, x_span, y_span):
 
 
 def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
-    '''
+    """
 
         draw indicator
 
@@ -192,13 +195,13 @@ def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
             x_span (np.Array): x-dim anchor points for spline
             y_span (np.Array): y-dim anchor points for spline
             tip_slope (float): slope of spline at interested end
-            arrow_orientation (int): prevailing cardinal direction of spline at interested end   
-        
+            arrow_orientation (int): prevailing cardinal direction of spline at interested end
+
         Return:
             img (np.Array): updated image with indicator drawn on it
             indicator_bbox (list): 2D-list with bbox corners for indicator as [[x,y],[x,y]]
-            
-    '''
+
+    """
 
     # get reference point
     if self.arrow_placement == END:
@@ -209,7 +212,7 @@ def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
     # img = cv2.circle(img, tuple(tri_source), 3, (40,255,0), -1)
 
     # TODO:: fine-tune these thresholds
-    # if slope is extreme, then just place simple inicator in cardinal direction
+    # if slope is extreme, then just place simple indicator in cardinal direction
     if math.isnan(tip_slope) or abs(tip_slope) > 10 or abs(tip_slope) < 0.5:
 
         if arrow_orientation == UP:
@@ -231,7 +234,7 @@ def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
 
         if self.indicator == INHIBIT:
             triangle_cnt = np.array([pt1, pt3])
-            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.thickness + 2)
+            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.inhibit_tickness)
         else:
             triangle_cnt = np.array([pt1, pt2, pt3])
             cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, -1)
@@ -289,18 +292,18 @@ def draw_indicator(self, img, x_span, y_span, tip_slope, arrow_orientation):
 
         if self.indicator == INHIBIT:
             triangle_cnt = np.array([pt1, pt3])
-            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.thickness + 2)
+            cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, self.inhibit_tickness)
         else:
             triangle_cnt = np.array([pt1, pt2, pt3])
             cv2.drawContours(img, [triangle_cnt], 0, self.arrow_color, -1)
 
     # get bbox dims for corresponding indicator
     if self.indicator == INHIBIT:
-        min_x = min([pt1[0], pt3[0]]) - self.thickness + 2
-        min_y = min([pt1[1], pt3[1]]) - self.thickness + 2
+        min_x = min([pt1[0], pt3[0]]) - self.inhibit_tickness
+        min_y = min([pt1[1], pt3[1]]) - self.inhibit_tickness
 
-        max_x = max([pt1[0], pt3[0]]) + self.thickness + 2
-        max_y = max([pt1[1], pt3[1]]) + self.thickness + 2
+        max_x = max([pt1[0], pt3[0]]) + self.inhibit_tickness
+        max_y = max([pt1[1], pt3[1]]) + self.inhibit_tickness
     else:
         min_x = min([pt1[0], pt2[0], pt3[0]])
         min_y = min([pt1[1], pt2[1], pt3[1]])
@@ -352,7 +355,7 @@ def draw_textbox(self, img, label, location, w, h):
 
 
 def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbox):
-    '''
+    """
 
         draw entities, draw spline, draw indicator
 
@@ -368,14 +371,14 @@ def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbo
             x_span (np.Array): x-dim anchor points for spline
             y_span (np.Array): y-dim anchor points for spline
 
-    '''
+    """
 
     # Dataset
     # TODO:: set up to be several different classes of splines
     # TODO:: add arched arrow
     # TODO:: corner spline on squares
 
-    # set num in linspace to be dependent on distance from one center to another
+    # set num in linespace to be dependent on distance from one center to another
     canidate_points = np.linspace(entity1_center, entity2_center, num=50, dtype=np.int)
 
     # get start point for spline
@@ -385,8 +388,8 @@ def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbo
     start_point = None
     for idx in range(canidate_points.shape[0] - 1):
         current_point = canidate_points[idx, :]
-        if current_point[0] < entity1_bbox[0][0] or current_point[1] < entity1_bbox[0][1] or current_point[0] > \
-                entity1_bbox[1][0] or current_point[1] > entity1_bbox[1][1]:
+        if current_point[0] < entity1_bbox[0][0] or current_point[1] < entity1_bbox[0][1] or \
+                current_point[0] > entity1_bbox[1][0] or current_point[1] > entity1_bbox[1][1]:
             count += 1
             if count == tar_point:
                 start_point = [math.floor(current_point[0]), math.floor(current_point[1])]
@@ -396,15 +399,17 @@ def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbo
     end_point = None
     for idx in range(canidate_points.shape[0] - 1, 0, -1):
         current_point = canidate_points[idx, :]
-        if current_point[0] < entity2_bbox[0][0] or current_point[1] < entity2_bbox[0][1] or current_point[0] > \
-                entity2_bbox[1][0] or current_point[1] > entity2_bbox[1][1]:
+        if current_point[0] < entity2_bbox[0][0] or current_point[1] < entity2_bbox[0][1] or \
+                current_point[0] > entity2_bbox[1][0] or current_point[1] > entity2_bbox[1][1]:
             count += 1
             if count == tar_point:
                 end_point = [math.floor(current_point[0]), math.floor(current_point[1])]
-
-    spline_points = np.linspace(start_point, end_point, num=4, dtype=np.int)
-    x_span = spline_points[:, 0]
-    y_span = spline_points[:, 1]
+    try:
+        spline_points = np.linspace(start_point, end_point, num=4, dtype=np.int)
+        x_span = spline_points[:, 0]
+        y_span = spline_points[:, 1]
+    except:
+        raise ValueError
 
     # add noise in better way
     # x_noise = np.random.randint(0,20,(1,))
@@ -418,7 +423,7 @@ def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbo
 
 
 def draw_relationship(self, img, entity1_center, entity2_center, text1_shape, text2_shape, label1, label2):
-    '''
+    """
 
         draw entities, draw spline, draw indicator
 
@@ -436,15 +441,26 @@ def draw_relationship(self, img, entity1_center, entity2_center, text1_shape, te
             img (np.Array): updated image with entities, spline, and indicator drawn on it
             relationship_bbox (list): 2D-list with bbox corners for spline and indicator as [[min_x,min_y],[max_x,min_y],[max_x,max_y],[min_x,max_y]]
 
-    '''
+    """
+
+    arrow_color_list = [(0, 0, 0), (0, 240, 0), (240, 0, 0), (0, 0, 240), (240, 240, 0), (0, 240, 240), (240, 0, 240)]
+    self.arrow_color = random.choice(arrow_color_list)
+
+    textbox_background_list = [(23, 44, 60), (153, 80, 84), (217, 104, 49), (230, 179, 61)]
+    self.textbox_background = random.choice(textbox_background_list)
+
+    text_color_list = [(199, 237, 233), (175, 215, 237), (92, 167, 186), (255, 66, 93), (147, 224, 255)]
+    self.text_color = random.choice(text_color_list)
 
     w1, h1 = text1_shape
     w2, h2 = text2_shape
 
     img, entity1_bbox = draw_textbox(self, img, label1, entity1_center, w1, h1)
     img, entity2_bbox = draw_textbox(self, img, label2, entity2_center, w2, h2)
-
-    x_span, y_span = get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbox)
+    try:
+        x_span, y_span = get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbox)
+    except:
+        raise ValueError
     img, f, orientation, spline_bbox = draw_spline(self, img, x_span, y_span)
 
     img, indicator_bbox = draw_indicator(self, img, x_span, y_span, f, orientation)
@@ -474,7 +490,7 @@ def radial_profile(data, center):
 
     '''
 
-    y, x = np.indices(data.shape)
+    y, x = np.indices((data.shape))
     r = np.sqrt((x - center[0]) ** 2 + (y - center[1]) ** 2)
     r = r.astype(np.int)
 
@@ -519,7 +535,7 @@ def check_slice(template_im, slice_shape, x, y, padding=0):
     magnitude_spectrum = 20 * np.log(np.abs(fshift))
 
     # x,y format
-    center = [int(slice_shape[1] / 2), int(slice_shape[0] / 2)]
+    center = (int(slice_shape[1] / 2), int(slice_shape[0] / 2))
 
     # get description of fft emitting from center
     radial_prof = radial_profile(magnitude_spectrum, center)
@@ -621,7 +637,7 @@ class template_thread(threading.Thread):
 
         # how many images per template
         stop_child_flag = False
-        num_copies = 8
+        num_copies = 4
         for copy_idx in range(0, num_copies):
 
             # children in here
@@ -667,25 +683,6 @@ class copy_thread(threading.Thread):
         self.name = name
         self.directory = directory
         self.filename = filename
-        # TODO:: set inhibit thickness based of off spline thickness and remove inhibit thickness parameter
-        # TODO:: to get boarder on spline, just do thickness + 1 and don't fill, then run back over with different
-        #  color at thickness and fill
-
-        self.font_style = cv2.FONT_HERSHEY_SIMPLEX
-        self.font_size = random.randint(5, 8) * 0.1
-        self.padding = 0
-        self.thickness = random.randint(2, 4)
-        self.tip_len = 10
-        self.base_len = 20
-        self.text_margin = 10
-        self.arrow_placement = random.choice([START, END])
-        self.arrow_color = (255, 128, 76)
-        self.textbox_background = (176, 224, 230)
-        self.textbox_border_thickness = 1
-        self.text_color = (0, 0, 0)
-        self.text_thickness = 1
-        self.indicator = random.choice([INHIBIT, ACTIVATE])
-        # self.boarder = self.thickness + 1
 
     def run(self):
 
@@ -694,6 +691,46 @@ class copy_thread(threading.Thread):
         Attempt to place x# of samples on a template, save new image, and save annotation
 
         '''
+
+        # TODO:: set inhibit thickness based of off spline thickness and remove inhibit thickness parameter
+        # TODO:: to get boarder on spline, just do thickness + 1 and don't fill, then run back over with different color at thickness and fill
+
+        font_style_list = [cv2.FONT_HERSHEY_SIMPLEX, cv2.QT_FONT_NORMAL, cv2.FONT_HERSHEY_TRIPLEX,
+                           cv2.FONT_HERSHEY_DUPLEX]
+        self.font_style = random.choice(font_style_list)
+
+        self.font_size = random.randint(5, 8) * 0.1
+        self.padding = 0
+
+        self.thickness = random.randint(2, 4)
+
+        self.tip_len = random.randint(5, 15)
+
+        self.base_len = random.randint(10, 20)
+
+        self.text_margin = random.randint(5, 15)
+
+        self.arrow_placement = random.choice([START, END])
+
+        arrow_color_list = [(0, 0, 0), (0, 240, 0), (240, 0, 0), (0, 0, 240), (240, 240, 0), (0, 240, 240),
+                            (240, 0, 240)]
+        self.arrow_color = random.choice(arrow_color_list)
+
+        textbox_background_list = [(23, 44, 60), (153, 80, 84), (217, 104, 49), (230, 179, 61)]
+        self.textbox_background = random.choice(textbox_background_list)
+
+        self.textbox_border_thickness = random.randint(0, 2)
+
+        text_color_list = [(199, 237, 233), (175, 215, 237), (92, 167, 186), (255, 66, 93), (147, 224, 255)]
+        self.text_color = random.choice(text_color_list)
+
+        self.text_thickness = random.randint(1, 2)
+
+        self.indicator = random.choice([INHIBIT, ACTIVATE])
+
+        self.inhibit_tickness = self.thickness + 2
+        # the ratio between x_dim and y_dim is randomly generated
+        x_y_ratio = random.random() + 0.3
 
         # loop through templates
         # read template and get query coords
@@ -714,18 +751,26 @@ class copy_thread(threading.Thread):
             "shape_type": "polygon",
             "flags": {}
         }
+        # 'str_random_list' is come from 'str_random_text.txt'
+        f = open(r'str_random_text_less7.txt', 'r')
+        str_random_list_less7 = [i[:-1].split('\n') for i in f.readlines()]
+        str_random_list_less7 = [n for a in str_random_list_less7 for n in a]
         for relation_idx in range(30):
 
             # TODO:: make set of names to pull from or characters
 
-            tmp_str_len = random.randint(3, 7)
-            label1 = randomword(tmp_str_len).upper()
-            tmp_str_len = random.randint(3, 7)
-            label2 = randomword(tmp_str_len).upper()
+            # tmp_str_len = random.randint(3, 7)
+            # label1 = randomword(tmp_str_len).upper()
+            # tmp_str_len = random.randint(3, 7)
+            # label2 = randomword(tmp_str_len).upper()
+            label1 = random.choice(str_random_list_less7)
+            label2 = random.choice(str_random_list_less7)
 
             # TODO:: set y_dim params based on x_dim value
             x_dim = np.random.randint(100, 500)
-            y_dim = np.random.randint(100, 500)
+            y_dim = int(x_dim * x_y_ratio)
+            if y_dim < 100:
+                y_dim += 150
             slice_shape = [x_dim, y_dim]
 
             # randomly select indicator head
@@ -743,13 +788,15 @@ class copy_thread(threading.Thread):
 
                 # check if selected template area is good
                 if check_slice(template_im, slice_shape, x_target, y_target, self.padding):
-
                     entity1_center, entity2_center, text1_shape, text2_shape = get_entity_placement(self, slice_shape,
                                                                                                     x_target, y_target,
                                                                                                     label1, label2)
-                    template_im, relationship_bbox = draw_relationship(self, template_im, entity1_center,
-                                                                       entity2_center, text1_shape, text2_shape, label1,
-                                                                       label2)
+                    try:
+                        template_im, relationship_bbox = draw_relationship(self, template_im, entity1_center,
+                                                                           entity2_center, text1_shape, text2_shape,
+                                                                           label1, label2)
+                    except:
+                        continue
 
                     # generate annotation
                     label1_x1 = math.floor(entity1_center[0] - (text1_shape[0] / 2))
@@ -786,7 +833,6 @@ class copy_thread(threading.Thread):
                         id2id_str = str(label2_shape['ID']) + "|" + str(label1_shape['ID'])
                     else:
                         id2id_str = str(label1_shape['ID']) + "|" + str(label2_shape['ID'])
-
                     if self.indicator == INHIBIT:
                         indicator_shape['label'] = str(element_indx) + ":inhibit:" + id2id_str
                     else:
@@ -811,16 +857,15 @@ class copy_thread(threading.Thread):
 
 
 def populate_figures():
-    """
+    '''
 
     Start multiple threads for generating samples from 4 different templates at once
 
-    """
+    '''
 
     # loop through all templates
     stop_flag = False
     directory = "templates"
-    # TODO--need to change
     template_list = os.listdir(directory)
     for template_idx in range(0, len(template_list) - 1, 4):
 
@@ -855,15 +900,7 @@ def populate_figures():
         thread3.join()
 
 
-def clear_output():
-    # clear the output_test
-    for file in os.listdir("output_test"):
-        file = os.path.join("output_test", file)
-        os.remove(file)
-
-
 if __name__ == "__main__":
     # TODO:: lower high-freq threshold based on colors being used for entities and arrows
-    #  another interesting idea would be to include targeted noise (i.e. lines with no indicator connecting no entities)
-    clear_output()
+    # another interesting idea would be to include targeted noise (i.e. lines with no indicator connecting no entities)
     populate_figures()
