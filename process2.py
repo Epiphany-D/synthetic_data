@@ -767,11 +767,13 @@ class copy_thread(threading.Thread):
             label2 = random.choice(str_random_list_less7)
 
             # TODO:: set y_dim params based on x_dim value
+            # Change::use x_y_ratio to change y_dim dynamicly
             x_dim = np.random.randint(100, 500)
             y_dim = int(x_dim * x_y_ratio)
             if y_dim < 100:
                 y_dim += 150
             slice_shape = [x_dim, y_dim]
+            # Done
 
             # randomly select indicator head
             if np.random.randint(2):
@@ -902,5 +904,5 @@ def populate_figures():
 
 if __name__ == "__main__":
     # TODO:: lower high-freq threshold based on colors being used for entities and arrows
-    # another interesting idea would be to include targeted noise (i.e. lines with no indicator connecting no entities)
+    # TODO:: another interesting idea would be to include targeted noise (i.e. lines with no indicator connecting no entities)
     populate_figures()
