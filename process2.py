@@ -28,9 +28,9 @@ INHIBIT = 0
 ACTIVATE = 1
 
 
-def randomword(length):
-    letters = string.ascii_lowercase
-    return ''.join(random.choice(letters) for i in range(length))
+# def randomword(length):
+#     letters = string.ascii_lowercase
+#     return ''.join(random.choice(letters) for i in range(length))
 
 
 def check_orientation(source_point, comparison_pt):
@@ -149,7 +149,7 @@ def draw_spline(self, img, x_span, y_span):
     # make linespace to serve as first param and interpolating the target values which is the set of x & y values
     spl = make_interp_spline(param, np.c_[x_span, y_span], k=3)  # (1)
     # TODO:: change 500 parameter to be dynamic based on manitude differences in x_span
-    X_, Y_ = spl(np.linspace(0, 1, x_span.size * 500)).T  # (2)
+    X_, Y_ = spl(np.linspace(0, 1, x_span.size * 50)).T  # (2)
 
     X_ = np.round(X_, 0).astype(int)
     Y_ = np.round(Y_, 0).astype(int)
@@ -341,10 +341,26 @@ def draw_textbox(self, img, label, location, w, h):
 
     # places text
     # to add boarder just do same rectangle but don't fill and can just make it to include optionally
-    img = cv2.rectangle(img, (x1, y1), (x1 + w + (self.text_margin * 2), y1 + h + (self.text_margin * 2)),
-                        self.textbox_background, -1)
-    img = cv2.rectangle(img, (x1, y1), (x1 + w + (self.text_margin * 2), y1 + h + (self.text_margin * 2)), (0, 0, 0),
-                        self.textbox_border_thickness)
+    textbox_shape = random.choice(['ellipse', 'circle', 'rectangle'])
+    if textbox_shape == 'ellipse':
+        img = cv2.ellipse(img, (location[0], location[1]),
+                          (w, h + self.text_margin), 0, 0, 360,
+                          self.textbox_background, -1)
+        img = cv2.ellipse(img, (location[0], location[1]),
+                          (w, h + self.text_margin), 0, 0, 360, (0, 0, 0),
+                          self.textbox_border_thickness)
+    elif textbox_shape == 'circle':
+        img = cv2.circle(img, (location[0], location[1]),
+                         int((w * w + h * h) ** 0.5 * 0.5) + self.text_margin,
+                         self.textbox_background, -1)
+        img = cv2.circle(img, (location[0], location[1]),
+                         int((w * w + h * h) ** 0.5 * 0.5) + self.text_margin, (0, 0, 0),
+                         self.textbox_border_thickness)
+    elif textbox_shape == 'rectangle':
+        img = cv2.rectangle(img, (x1, y1), (x1 + w + (self.text_margin * 2), y1 + h + (self.text_margin * 2)),
+                            self.textbox_background, -1)
+        img = cv2.rectangle(img, (x1, y1), (x1 + w + (self.text_margin * 2), y1 + h + (self.text_margin * 2)),
+                            (0, 0, 0), self.textbox_border_thickness)
     # putText takes coordinates of the bottom-left corner of the text string
     img = cv2.putText(img, label, (x1 + self.text_margin, y1 + h + self.text_margin), self.font_style, self.font_size,
                       self.text_color, self.text_thickness)
@@ -411,9 +427,9 @@ def get_spline_anchors(entity1_center, entity2_center, entity1_bbox, entity2_bbo
     except:
         raise ValueError
 
-    # add noise in better way
-    # x_noise = np.random.randint(0,20,(1,))
-    # y_noise = np.random.randint(0,20,(1,))
+    # TODO:: add noise in better way
+    # x_noise = np.random.randint(0, 20, (1,))
+    # y_noise = np.random.randint(0, 20, (1,))
     # x_span[1] = x_span[1] + x_noise
     # y_span[1] = y_span[1] + y_noise
     # x_span[2] = x_span[2] + x_noise
@@ -521,7 +537,7 @@ def check_slice(template_im, slice_shape, x, y, padding=0):
 
     '''
 
-    threshold = 50
+    threshold = 120
 
     template_slice = template_im[y - padding:y + slice_shape[1] + padding, x - padding:x + slice_shape[0] + padding, :]
 
@@ -582,7 +598,7 @@ def get_entity_placement(self, slice_shape, x_target, y_target, label1, label2):
     # 4 configurations/positioning: hotdog, hamburger, square1, square2
     dim_ratio = slice_shape[0] / slice_shape[1]
     if dim_ratio > 4:
-        # hotdog
+        # hotdogb
         entity1_center_y = math.floor(slice_shape[1] / 2) + y_target
         entity1_center_x = x_target + slice_shape[0] - math.floor(w1 / 2) - self.text_margin
 
@@ -730,8 +746,7 @@ class copy_thread(threading.Thread):
 
         self.inhibit_tickness = self.thickness + 2
         # the ratio between x_dim and y_dim is randomly generated
-        x_y_ratio = random.random() + 0.3
-
+        x_y_ratio = random.random()
         # loop through templates
         # read template and get query coords
         template_im = cv2.imread(os.path.join(self.directory, self.filename))
@@ -755,6 +770,7 @@ class copy_thread(threading.Thread):
         f = open(r'str_random_text_less7.txt', 'r')
         str_random_list_less7 = [i[:-1].split('\n') for i in f.readlines()]
         str_random_list_less7 = [n for a in str_random_list_less7 for n in a]
+
         for relation_idx in range(30):
 
             # TODO:: make set of names to pull from or characters
@@ -769,9 +785,7 @@ class copy_thread(threading.Thread):
             # TODO:: set y_dim params based on x_dim value
             # Change::use x_y_ratio to change y_dim dynamicly
             x_dim = np.random.randint(100, 500)
-            y_dim = int(x_dim * x_y_ratio)
-            if y_dim < 100:
-                y_dim += 150
+            y_dim = int((x_dim * x_y_ratio + random.randint(0, 1500)) % 400 + 100)
             slice_shape = [x_dim, y_dim]
             # Done
 
