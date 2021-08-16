@@ -652,11 +652,20 @@ def get_entity_placement(self, slice_shape, x_target, y_target, label1, label2):
             entity1_center_y = y_target + slice_shape[1] - math.floor(h1 / 2) - self.text_margin
         # squares: flipped corners
         else:
+            # Origin::
+            # entity1_center_x = x_target + math.floor(w1 / 2) + self.text_margin
+            # entity1_center_y = y_target + math.floor(h1 / 2) + self.text_margin
+            #
+            # entity2_center_x = x_target + slice_shape[0] - math.floor(w2 / 2) - self.text_margin
+            # entity2_center_y = y_target + slice_shape[1] - math.floor(h2 / 2) - self.text_margin
+
+            # Change::
             entity1_center_x = x_target + math.floor(w1 / 2) + self.text_margin
-            entity1_center_y = y_target + math.floor(h1 / 2) + self.text_margin
+            entity1_center_y = y_target + slice_shape[1] - math.floor(h1 / 2) - self.text_margin
 
             entity2_center_x = x_target + slice_shape[0] - math.floor(w2 / 2) - self.text_margin
-            entity2_center_y = y_target + slice_shape[1] - math.floor(h2 / 2) - self.text_margin
+            entity2_center_y = y_target + math.floor(h2 / 2) + self.text_margin
+            # Change end
 
     entity1_center = [entity1_center_x, entity1_center_y]
     entity2_center = [entity2_center_x, entity2_center_y]
