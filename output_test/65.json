@@ -8,23 +8,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 0,
-      "label": "0:gene:SGOL2",
+      "label": "0:gene:IAK",
       "points": [
         [
-          851,
-          327
+          475,
+          684
         ],
         [
-          903,
-          327
+          501,
+          684
         ],
         [
-          903,
-          339
+          501,
+          696
         ],
         [
-          851,
-          339
+          475,
+          696
         ]
       ],
       "group_id": null,
@@ -37,23 +37,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 1,
-      "label": "1:gene:C7orf64",
+      "label": "1:gene:ALY",
       "points": [
         [
-          1026,
-          44
+          264,
+          684
         ],
         [
-          1090,
-          44
+          292,
+          684
         ],
         [
-          1090,
-          56
+          292,
+          696
         ],
         [
-          1026,
-          56
+          264,
+          696
         ]
       ],
       "group_id": null,
@@ -66,23 +66,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 2,
-      "label": "2:activate:1|0",
+      "label": "2:activate:0|1",
       "points": [
         [
-          894,
-          96
+          307,
+          673
         ],
         [
-          1028,
-          96
+          445,
+          673
         ],
         [
-          1028,
-          294
+          445,
+          707
         ],
         [
-          894,
-          294
+          307,
+          707
         ]
       ],
       "group_id": null,
@@ -95,23 +95,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 3,
-      "label": "3:gene:BTBD9",
+      "label": "3:gene:DGKBFF",
       "points": [
         [
-          590,
-          625
+          917,
+          369
         ],
         [
-          640,
-          625
+          1003,
+          369
         ],
         [
-          640,
-          637
+          1003,
+          385
         ],
         [
-          590,
-          637
+          917,
+          385
         ]
       ],
       "group_id": null,
@@ -124,23 +124,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 4,
-      "label": "4:gene:H3-3B",
+      "label": "4:gene:CYDSPQ",
       "points": [
         [
-          587,
-          1082
+          644,
+          605
         ],
         [
-          643,
-          1082
+          732,
+          605
         ],
         [
-          643,
-          1094
+          732,
+          621
         ],
         [
-          587,
-          1094
+          644,
+          621
         ]
       ],
       "group_id": null,
@@ -153,23 +153,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 5,
-      "label": "5:inhibit:4|3",
+      "label": "5:activate:4|3",
       "points": [
         [
-          594,
-          690
+          737,
+          408
         ],
         [
-          636,
-          690
+          920,
+          408
         ],
         [
-          636,
-          1022
+          920,
+          569
         ],
         [
-          594,
-          1022
+          737,
+          569
         ]
       ],
       "group_id": null,
@@ -182,23 +182,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 6,
-      "label": "6:gene:SH3KBP1",
+      "label": "6:gene:XXSK",
       "points": [
         [
-          736,
-          893
+          417,
+          837
         ],
         [
-          810,
-          893
+          467,
+          837
         ],
         [
-          810,
-          905
+          467,
+          851
         ],
         [
-          736,
-          905
+          417,
+          851
         ]
       ],
       "group_id": null,
@@ -211,23 +211,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 7,
-      "label": "7:gene:HPS6",
+      "label": "7:gene:FWLDP",
       "points": [
         [
-          645,
-          759
+          78,
+          837
         ],
         [
-          687,
-          759
+          144,
+          837
         ],
         [
-          687,
-          771
+          144,
+          851
         ],
         [
-          645,
-          771
+          78,
+          851
         ]
       ],
       "group_id": null,
@@ -240,23 +240,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 8,
-      "label": "8:activate:7|6",
+      "label": "8:inhibit:7|6",
       "points": [
         [
-          692,
-          797
+          178,
+          830
         ],
         [
-          759,
-          797
+          387,
+          830
         ],
         [
-          759,
-          877
+          387,
+          864
         ],
         [
-          692,
-          877
+          178,
+          864
         ]
       ],
       "group_id": null,
@@ -269,23 +269,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 9,
-      "label": "9:gene:LEMD3",
+      "label": "9:gene:ECFAR",
       "points": [
         [
-          1056,
-          1047
+          699,
+          431
         ],
         [
-          1108,
-          1047
+          763,
+          431
         ],
         [
-          1108,
-          1059
+          763,
+          445
         ],
         [
-          1056,
-          1059
+          699,
+          445
         ]
       ],
       "group_id": null,
@@ -298,23 +298,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 10,
-      "label": "10:gene:TCEANC2",
+      "label": "10:gene:ERBB",
       "points": [
         [
-          1034,
-          704
+          440,
+          431
         ],
         [
-          1104,
-          704
+          494,
+          431
         ],
         [
-          1104,
-          716
+          494,
+          445
         ],
         [
-          1034,
-          716
+          440,
+          445
         ]
       ],
       "group_id": null,
@@ -330,20 +330,20 @@
       "label": "11:inhibit:10|9",
       "points": [
         [
-          1059,
-          759
+          531,
+          417
         ],
         [
-          1101,
-          759
+          672,
+          417
         ],
         [
-          1101,
-          1010
+          672,
+          463
         ],
         [
-          1059,
-          1010
+          531,
+          463
         ]
       ],
       "group_id": null,
@@ -356,23 +356,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 12,
-      "label": "12:gene:SCGB3A1",
+      "label": "12:gene:MZW",
       "points": [
         [
-          311,
-          534
+          1070,
+          60
         ],
         [
-          383,
-          534
+          1106,
+          60
         ],
         [
-          383,
-          546
+          1106,
+          72
         ],
         [
-          311,
-          546
+          1070,
+          72
         ]
       ],
       "group_id": null,
@@ -385,23 +385,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 13,
-      "label": "13:gene:GOLGA4",
+      "label": "13:gene:ISV",
       "points": [
         [
-          699,
-          255
+          1269,
+          215
         ],
         [
-          759,
-          255
+          1293,
+          215
         ],
         [
-          759,
-          267
+          1293,
+          227
         ],
         [
-          699,
-          267
+          1269,
+          227
         ]
       ],
       "group_id": null,
@@ -414,23 +414,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 14,
-      "label": "14:activate:13|12",
+      "label": "14:activate:12|13",
       "points": [
         [
-          400,
-          306
+          1088,
+          97
         ],
         [
-          666,
-          306
+          1256,
+          97
         ],
         [
-          666,
-          506
+          1256,
+          241
         ],
         [
-          400,
-          506
+          1088,
+          241
         ]
       ],
       "group_id": null,
@@ -443,23 +443,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 15,
-      "label": "15:gene:FOXB1",
+      "label": "15:gene:WPJM",
       "points": [
         [
-          176,
-          416
+          1080,
+          398
         ],
         [
-          228,
-          416
+          1134,
+          398
         ],
         [
-          228,
-          428
+          1134,
+          412
         ],
         [
-          176,
-          428
+          1080,
+          412
         ]
       ],
       "group_id": null,
@@ -472,23 +472,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 16,
-      "label": "16:gene:EGFLAM",
+      "label": "16:gene:AVYSG",
       "points": [
         [
-          392,
-          113
+          1220,
+          630
         ],
         [
-          452,
-          113
+          1282,
+          630
         ],
         [
-          452,
-          125
+          1282,
+          644
         ],
         [
-          392,
-          125
+          1220,
+          644
         ]
       ],
       "group_id": null,
@@ -501,23 +501,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 17,
-      "label": "17:activate:16|15",
+      "label": "17:inhibit:15|16",
       "points": [
         [
-          225,
-          168
+          1133,
+          447
         ],
         [
-          386,
-          168
+          1240,
+          447
         ],
         [
-          386,
-          381
+          1240,
+          605
         ],
         [
-          225,
-          381
+          1133,
+          605
         ]
       ],
       "group_id": null,
@@ -530,23 +530,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 18,
-      "label": "18:gene:MSH5",
+      "label": "18:gene:XGQ",
       "points": [
         [
-          702,
-          712
+          1103,
+          865
         ],
         [
-          746,
-          712
+          1143,
+          865
         ],
         [
-          746,
-          724
+          1143,
+          879
         ],
         [
-          702,
-          724
+          1103,
+          879
         ]
       ],
       "group_id": null,
@@ -559,23 +559,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 19,
-      "label": "19:gene:NR2F1",
+      "label": "19:gene:PPP",
       "points": [
         [
-          870,
-          385
+          1278,
+          1088
         ],
         [
-          922,
-          385
+          1320,
+          1088
         ],
         [
-          922,
-          397
+          1320,
+          1102
         ],
         [
-          870,
-          397
+          1278,
+          1102
         ]
       ],
       "group_id": null,
@@ -588,23 +588,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 20,
-      "label": "20:activate:19|18",
+      "label": "20:activate:18|19",
       "points": [
         [
-          735,
-          437
+          1163,
+          872
         ],
         [
-          871,
-          437
+          1314,
+          872
         ],
         [
-          871,
-          679
+          1314,
+          1075
         ],
         [
-          735,
-          679
+          1163,
+          1075
         ]
       ],
       "group_id": null,
@@ -617,23 +617,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 21,
-      "label": "21:gene:TMEM68",
+      "label": "21:gene:YRXD",
       "points": [
         [
-          162,
-          1014
+          26,
+          340
         ],
         [
-          224,
-          1014
+          68,
+          340
         ],
         [
-          224,
-          1026
+          68,
+          352
         ],
         [
-          162,
-          1026
+          26,
+          352
         ]
       ],
       "group_id": null,
@@ -646,23 +646,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 22,
-      "label": "22:gene:C7orf33",
+      "label": "22:gene:RSDN",
       "points": [
         [
-          451,
-          676
+          166,
+          508
         ],
         [
-          515,
-          676
+          208,
+          508
         ],
         [
-          515,
-          688
+          208,
+          520
         ],
         [
-          451,
-          688
+          166,
+          520
         ]
       ],
       "group_id": null,
@@ -675,23 +675,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 23,
-      "label": "23:activate:22|21",
+      "label": "23:inhibit:21|22",
       "points": [
         [
-          223,
-          730
+          47,
+          382
         ],
         [
-          441,
-          730
+          142,
+          382
         ],
         [
-          441,
-          981
+          142,
+          531
         ],
         [
-          223,
-          981
+          47,
+          531
         ]
       ],
       "group_id": null,
@@ -704,23 +704,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 24,
-      "label": "24:gene:RRNAD1",
+      "label": "24:gene:DDGY",
       "points": [
         [
-          513,
-          166
+          389,
+          456
         ],
         [
-          575,
-          166
+          457,
+          456
         ],
         [
-          575,
-          178
+          457,
+          474
         ],
         [
-          513,
-          178
+          389,
+          474
         ]
       ],
       "group_id": null,
@@ -733,23 +733,23 @@
       "component": [],
       "rotated_box": [],
       "ID": 25,
-      "label": "25:gene:FAM166B",
+      "label": "25:gene:MRF",
       "points": [
         [
-          785,
-          35
+          552,
+          628
         ],
         [
-          857,
-          35
+          604,
+          628
         ],
         [
-          857,
-          47
+          604,
+          646
         ],
         [
-          785,
-          47
+          552,
+          646
         ]
       ],
       "group_id": null,
@@ -765,455 +765,20 @@
       "label": "26:inhibit:25|24",
       "points": [
         [
-          605,
-          73
+          435,
+          488
         ],
         [
-          753,
-          73
+          549,
+          488
         ],
         [
-          753,
-          160
+          549,
+          605
         ],
         [
-          605,
-          160
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 27,
-      "label": "27:gene:CYTH1",
-      "points": [
-        [
-          1228,
-          660
-        ],
-        [
-          1278,
-          660
-        ],
-        [
-          1278,
-          672
-        ],
-        [
-          1228,
-          672
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 28,
-      "label": "28:gene:CHST2",
-      "points": [
-        [
-          971,
-          315
-        ],
-        [
-          1021,
-          315
-        ],
-        [
-          1021,
-          327
-        ],
-        [
-          971,
-          327
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 29,
-      "label": "29:activate:28|27",
-      "points": [
-        [
-          1032,
-          370
-        ],
-        [
-          1227,
-          370
-        ],
-        [
-          1227,
-          625
-        ],
-        [
-          1032,
-          625
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 30,
-      "label": "30:gene:CD8",
-      "points": [
-        [
-          578,
-          421
-        ],
-        [
-          610,
-          421
-        ],
-        [
-          610,
-          433
-        ],
-        [
-          578,
-          433
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 31,
-      "label": "31:gene:LIN9",
-      "points": [
-        [
-          375,
-          227
-        ],
-        [
-          409,
-          227
-        ],
-        [
-          409,
-          239
-        ],
-        [
-          375,
-          239
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 32,
-      "label": "32:activate:31|30",
-      "points": [
-        [
-          433,
-          272
-        ],
-        [
-          566,
-          272
-        ],
-        [
-          566,
-          401
-        ],
-        [
-          433,
-          401
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 33,
-      "label": "33:gene:VWA5B1",
-      "points": [
-        [
-          198,
-          827
-        ],
-        [
-          260,
-          827
-        ],
-        [
-          260,
-          839
-        ],
-        [
-          198,
-          839
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 34,
-      "label": "34:gene:ZDHHC22",
-      "points": [
-        [
-          254,
-          583
-        ],
-        [
-          328,
-          583
-        ],
-        [
-          328,
-          595
-        ],
-        [
-          254,
-          595
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 35,
-      "label": "35:activate:34|33",
-      "points": [
-        [
-          225,
-          633
-        ],
-        [
-          279,
-          633
-        ],
-        [
-          279,
-          801
-        ],
-        [
-          225,
-          801
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 36,
-      "label": "36:gene:IFI6",
-      "points": [
-        [
-          364,
-          941
-        ],
-        [
-          392,
-          941
-        ],
-        [
-          392,
-          953
-        ],
-        [
-          364,
-          953
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 37,
-      "label": "37:gene:NUPR1",
-      "points": [
-        [
-          624,
-          840
-        ],
-        [
-          678,
-          840
-        ],
-        [
-          678,
-          852
-        ],
-        [
-          624,
-          852
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 38,
-      "label": "38:inhibit:37|36",
-      "points": [
-        [
-          427,
-          870
-        ],
-        [
-          584,
-          870
-        ],
-        [
-          584,
-          947
-        ],
-        [
-          427,
-          947
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 39,
-      "label": "39:gene:CARD18",
-      "points": [
-        [
-          218,
-          249
-        ],
-        [
-          280,
-          249
-        ],
-        [
-          280,
-          261
-        ],
-        [
-          218,
-          261
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 40,
-      "label": "40:gene:VANGL1",
-      "points": [
-        [
-          113,
-          170
-        ],
-        [
-          173,
-          170
-        ],
-        [
-          173,
-          182
-        ],
-        [
-          113,
-          182
-        ]
-      ],
-      "group_id": null,
-      "shape_type": "polygon",
-      "flags": {}
-    },
-    {
-      "line_color": null,
-      "fill_color": null,
-      "component": [],
-      "rotated_box": [],
-      "ID": 41,
-      "label": "41:inhibit:40|39",
-      "points": [
-        [
-          179,
-          203
-        ],
-        [
-          229,
-          203
-        ],
-        [
-          229,
-          246
-        ],
-        [
-          179,
-          246
+          435,
+          605
         ]
       ],
       "group_id": null,
@@ -1235,6 +800,6 @@
   ],
   "imagePath": "65.png",
   "imageData": null,
-  "imageHeight": 1179,
-  "imageWidth": 1317
+  "imageHeight": 1145,
+  "imageWidth": 1330
 }

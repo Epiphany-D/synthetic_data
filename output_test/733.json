@@ -1,0 +1,457 @@
+{
+  "version": null,
+  "flags": {},
+  "shapes": [
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 0,
+      "label": "0:gene:HOR",
+      "points": [
+        [
+          603,
+          542
+        ],
+        [
+          649,
+          542
+        ],
+        [
+          649,
+          558
+        ],
+        [
+          603,
+          558
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 1,
+      "label": "1:gene:EWV",
+      "points": [
+        [
+          274,
+          542
+        ],
+        [
+          322,
+          542
+        ],
+        [
+          322,
+          558
+        ],
+        [
+          274,
+          558
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 2,
+      "label": "2:inhibit:0|1",
+      "points": [
+        [
+          356,
+          530
+        ],
+        [
+          565,
+          530
+        ],
+        [
+          565,
+          574
+        ],
+        [
+          356,
+          574
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 3,
+      "label": "3:gene:FAGF",
+      "points": [
+        [
+          376,
+          329
+        ],
+        [
+          436,
+          329
+        ],
+        [
+          436,
+          345
+        ],
+        [
+          376,
+          345
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 4,
+      "label": "4:gene:YXZ",
+      "points": [
+        [
+          204,
+          329
+        ],
+        [
+          248,
+          329
+        ],
+        [
+          248,
+          345
+        ],
+        [
+          204,
+          345
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 5,
+      "label": "5:inhibit:3|4",
+      "points": [
+        [
+          273,
+          321
+        ],
+        [
+          350,
+          321
+        ],
+        [
+          350,
+          357
+        ],
+        [
+          273,
+          357
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 6,
+      "label": "6:gene:GXO",
+      "points": [
+        [
+          494,
+          624
+        ],
+        [
+          526,
+          624
+        ],
+        [
+          526,
+          636
+        ],
+        [
+          494,
+          636
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 7,
+      "label": "7:gene:VDX",
+      "points": [
+        [
+          335,
+          748
+        ],
+        [
+          367,
+          748
+        ],
+        [
+          367,
+          760
+        ],
+        [
+          335,
+          760
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 8,
+      "label": "8:inhibit:7|6",
+      "points": [
+        [
+          383,
+          644
+        ],
+        [
+          489,
+          644
+        ],
+        [
+          489,
+          728
+        ],
+        [
+          383,
+          728
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 9,
+      "label": "9:gene:CISCCE",
+      "points": [
+        [
+          672,
+          311
+        ],
+        [
+          762,
+          311
+        ],
+        [
+          762,
+          329
+        ],
+        [
+          672,
+          329
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 10,
+      "label": "10:gene:OIT",
+      "points": [
+        [
+          502,
+          480
+        ],
+        [
+          542,
+          480
+        ],
+        [
+          542,
+          498
+        ],
+        [
+          502,
+          498
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 11,
+      "label": "11:activate:10|9",
+      "points": [
+        [
+          565,
+          344
+        ],
+        [
+          683,
+          344
+        ],
+        [
+          683,
+          451
+        ],
+        [
+          565,
+          451
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 12,
+      "label": "12:gene:WOXL",
+      "points": [
+        [
+          446,
+          428
+        ],
+        [
+          488,
+          428
+        ],
+        [
+          488,
+          440
+        ],
+        [
+          446,
+          440
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 13,
+      "label": "13:gene:ATDYGE",
+      "points": [
+        [
+          221,
+          428
+        ],
+        [
+          279,
+          428
+        ],
+        [
+          279,
+          440
+        ],
+        [
+          221,
+          440
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    },
+    {
+      "line_color": null,
+      "fill_color": null,
+      "component": [],
+      "rotated_box": [],
+      "ID": 14,
+      "label": "14:activate:12|13",
+      "points": [
+        [
+          301,
+          416
+        ],
+        [
+          418,
+          416
+        ],
+        [
+          418,
+          452
+        ],
+        [
+          301,
+          452
+        ]
+      ],
+      "group_id": null,
+      "shape_type": "polygon",
+      "flags": {}
+    }
+  ],
+  "lineColor": [
+    0,
+    255,
+    0,
+    128
+  ],
+  "fillColor": [
+    255,
+    0,
+    0,
+    128
+  ],
+  "imagePath": "733.png",
+  "imageData": null,
+  "imageHeight": 872,
+  "imageWidth": 939
+}
