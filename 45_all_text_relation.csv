@@ -1,0 +1,367 @@
+relation_id,activator,receptor,relation_Bbox,relation_type,fig_id,fig_name,fig_file,height,width,fig_title,fig_caption,review_status,fig_path,reviewer_name
+1670,EPC,AMD3100,"396.2731323242,84.1855773926,42.6169433594,78.3253326416",activate_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+1671,AMD3100,CXCR4,"283.428314209,164.5698242188,42.4199829102,46.3450469971",inhibit_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+1672,GB,PI3K,"21.110206604,313.9982910156,64.3329620361,131.2538146973",activate_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+6260,PI3K, AKT,"139,384,246,50",activate_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+6261,OPG,AMD3100,"84,124,269,29",activate_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+6262,LY294002,PI3K,"139,345,106,89",inhibit_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+6450,PI3K, AKT,"139,384,246,50",activate_relation,320,PMC6681686__medscimonit-25-5572-g005.jpg,,480,640,test,test,1,static/imgs/validation/,Joshua
+5989,CADMIUM,ROS generation,"234,6,206,117.99999999999997",activate_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+5990,mTORC1,IRE1,"277.00000000000006,216,106,163.00000000000003",activate_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+5991,Kinase domain,JNK,"178,511,99.99999999999999,207.00000000000006",activate_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+5992,RNase domain,XBP1(S),"352,623,168,108.00",activate_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+5993,XBP1(S),APOPTOSIS,"250,699,270.00000000000006,144.00000000000003",inhibit_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+5994,JNK,APOPTOSIS,"178,701,244,142.00",activate_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+5995,ROS generation,mTORC1,"234,93,206,141",activate_relation,345,PMC3655991__pone.0064344.g007.jpg,,852,674,test,test,1,static/imgs/validation/,Stuart
+6672, CBF1,CBF1,"178.00000000000003,931,353.99999999999994,49.00000000000006",activate_relation,375,PMC3365567__nihms378339f1.jpg,,1050,782,test,test,1,static/imgs/validation/,Stuart
+6685,NICD,NICD,"421,428,82.99999999999997,460.9999999999999",activate_relation,375,PMC3365567__nihms378339f1.jpg,,1050,782,test,test,1,static/imgs/validation/,Stuart
+6686,CBF1, HES,"419,931,194.99999999999997,99.00000000000004",activate_relation,375,PMC3365567__nihms378339f1.jpg,,1050,782,test,test,1,static/imgs/validation/,Stuart
+2051,TGFBS,TGFBR2,"303.2925109863,13.9496135712,28.662902832,73.2517242432",activate_relation,386,PMC5541090__41598_2017_6522_Fig1_HTML.jpg,,571,675,test,test,1,static/imgs/validation/,Yijie
+2052,SMAD3,TRANSCRIPTION,"233.927520752,191.0789489746,129.1329040527,198.3159484863",activate_relation,386,PMC5541090__41598_2017_6522_Fig1_HTML.jpg,,571,675,test,test,1,static/imgs/validation/,Yijie
+2055,NREP,TGFBS,"434.5741882324,5.5887331963,105.354095459,24.095457077",activate_relation,386,PMC5541090__41598_2017_6522_Fig1_HTML.jpg,,571,675,test,test,1,static/imgs/validation/,Yijie
+2057,TGFBR2,SMAD2,"248.2080078125,110.8598709106,111.3030395508,29.3692398071",activate_relation,386,PMC5541090__41598_2017_6522_Fig1_HTML.jpg,,571,675,test,test,1,static/imgs/validation/,Yijie
+6154,TGFBS,TGFBR1,"202,11.000000000000002,202,95",activate_relation,386,PMC5541090__41598_2017_6522_Fig1_HTML.jpg,,571,675,test,test,1,static/imgs/validation/,Yijie
+6155,TGFBR1,SMAD2,"202,96,176.99999999999997,67",activate_relation,386,PMC5541090__41598_2017_6522_Fig1_HTML.jpg,,571,675,test,test,1,static/imgs/validation/,Yijie
+5996,PMA,Activin A,"233,19,133,901.9999999999998",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+5997,Activin A,SMAD2,"470,11,153.99999999999994,234.00000000000006",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+5998,SMAD2,SMAD2,"500,212,123.99999999999997,185.99999999999997",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+5999,SMAD2,SMAD2,"499,365,82,289.99999999999994",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+6000,SMAD2,SNON,"499,618,272.99999999999994,159.00000000000009",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+6001,SNON,SNON,"520,751.0000000000001,251.99999999999991,26.00000000000002",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+6002,APCCDH1,SNON,"661,592,110.99999999999989,185.00000000000006",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+6003,SNON,CD61,"520,751.9999999999999,152.99999999999994,160.00000000000009",inhibit_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+6004,RNAP II,CD61,"481,868,192,44.00000000000003",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+6673,Activin A,Activin A,"233,11,341.00000000000006,909.9999999999998",activate_relation,390,PMC4074601__nihms577797f8.jpg,,1050,932,test,test,1,static/imgs/validation/,Stuart
+2109,ANG,MAS,"345.6778564453,444.372253418,28.4194030762,58.5385742188",inhibit_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2110,ANG,ATIR,"256.9506835938,476.6862182617,25.7826843262,51.4584960938",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2111,ACE2,ANG,"346.7620849609,352.7956237793,27.2667236328,53.1542053223",inhibit_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2112,LXR-A,ATIR/p38,"129.3858032227,230.2089691162,119.4472198486,139.4568328857",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2113, PFD,LXR-A,"64.4139938354,333.6741027832,60.9488143921,40.9773254395",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2114, PFD,LXR-A,"533.9535522461,320.9661254883,72.5924682617,48.2015991211",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2115,ACE,ANG,"258.0511169434,372.8935546875,23.2997741699,63.015838623",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2116,ATIR/p38,ACE,"267.3764648438,262.1236877441,43.0836791992,70.0870361328",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2117,LXR-A,MAPK2,"416.9346618652,234.4023590088,112.6714172363,124.8393707275",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2118,MAPK2,ACE2,"338.1444091797,261.5974731445,37.4991760254,55.5038146973",inhibit_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2121,ATIR/p38,LXR-A,"82.2633743286,218.1799926758,140.4298095703,140.2692260742",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2122,MAPK2,LXR-A,"474.5251159668,218.5814056396,148.129119873,135.0634002686",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+6671,myocardial damage,MAPK2,"271.00000000000006,39,121.99999999999997,199",activate_relation,394,PMC5238375__srep40523-f2.jpg,,763,675,test,test,1,static/imgs/validation/,Ziting
+2245,FSHR,PKAN,"231.2751159668,97.6197967529,26.3272399902,55.2975921631",activate_relation,413,PMC6241696__ott-11-8107Fig4.jpg,,624,744,test,test,1,static/imgs/validation/,Ziting
+2247,GSK3B,NFKB1,"221.338470459,276.9652404785,52.9769897461,75.8396606445",inhibit_relation,413,PMC6241696__ott-11-8107Fig4.jpg,,624,744,test,test,1,static/imgs/validation/,Ziting
+2248,PKAN,GSK3B,"222.5801086426,187.0217285156,52.3644714355,61.7376861572",inhibit_relation,413,PMC6241696__ott-11-8107Fig4.jpg,,624,744,test,test,1,static/imgs/validation/,Ziting
+2249,NFKB1, NFKB1,"239.2917480469,397.774597168,24.4708251953,79.2338867188",activate_relation,413,PMC6241696__ott-11-8107Fig4.jpg,,624,744,test,test,1,static/imgs/validation/,Ziting
+6412,NFKB1,CASP3,"218,373,295,12.000000000000016",activate_relation,413,PMC6241696__ott-11-8107Fig4.jpg,,624,744,test,test,1,static/imgs/validation/,Ziting
+6393,PI3K,AKT,"273,157,262.00000000000006,91.99999999999999",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6394,PI3K,PDK1,"92,157,234,87.99999999999996",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6395,PDK1,S6K,"92,230,228,215",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6396,MTORC1,S6K,"279,350,280.99999999999994,94.99999999999997",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6397,S6K,DIFFERENTIATION,"62,429,258,72",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6398,S6K,PROLIFERATION,"279,429,245.00000000000009,69.99999999999993",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6399,S6K,PI3K,"273,157,53.00000000000002,288",inhibit_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6644,EN2,DIFFERENTIATION,"62,477,262,96",activate_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+6645,EN2,PROLIFERATION,"287,473,237.00000000000006,100.00000000000003",inhibit_relation,431,PMC3932947__2040-2392-5-9-7.jpg,,607,600,test,test,1,static/imgs/validation/,Yijie
+2474,ERK1, ETS1,"321.1948852539,285.4559326172,84.6156311035,80.7766418457",activate_relation,446,PMC5482458__pone.0179614.g005.jpg,,774,615,test,test,1,static/imgs/validation/,Ziting
+2777,UO126,ERK,"254.597442627,571.5298461914,51.1907958984,52.610168457",inhibit_relation,484,PMC5967041__12885_2018_4500_Fig4_HTML.jpg,,679,787,test,test,1,static/imgs/validation/,Ziting
+2778,ERK,mRNA,"333.1830444336,536.6154785156,38.3772583008,20.4864501953",activate_relation,484,PMC5967041__12885_2018_4500_Fig4_HTML.jpg,,679,787,test,test,1,static/imgs/validation/,Ziting
+2877,PPARS, NF-KB,"99.8053741455,190.4318237305,42.6100921631,22.7590179443",inhibit_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6270, ROS, NF-KB,"168,109,156,99.00000000000001",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6271,PPARS, ROS,"290,105,240.00000000000006,22.999999999999993",inhibit_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6275, IL-1B,NEURO-INFLAMMATION,"166,278,215,149.00",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6478,"Cox-2, MCP-1, IL-1B, TNF-a",NEURO-INFLAMMATION,"195,281,386.0000000000001,146.00000000000003",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6479,PKCa/MEK/ERK/AP-1,"Cox-2, MCP-1, IL-1B, TNF-a","336,192,245.00000000000009,111",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6480, ROS,PKCa/MEK/ERK/AP-1,"290,109,275.99999999999994,102.00000000000003",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6481,PKCa/MEK/ERK/AP-1, ROS,"290,109,275.99999999999994,102.00000000000003",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+6482, NF-KB, IL-1B,"166,193,51.99999999999998,102.00000000000003",activate_relation,502,PMC3341532__nihms-362544-f0008.jpg,,485,600,test,test,1,static/imgs/validation/,Joshua
+2906,MEK1,ERK1,"171.9269866943,395.7303466797,41.3671569824,80.7385559082",inhibit_relation,509,PMC6675870__fphar-10-00784-g006.jpg,,1013,787,test,test,1,static/imgs/validation/,Ziting
+2908,ERK1,BCL-2,"281.5595703125,488.0581054688,105.7389221191,29.2825927734",activate_relation,509,PMC6675870__fphar-10-00784-g006.jpg,,1013,787,test,test,1,static/imgs/validation/,Ziting
+6417, MCL-1,BCL-2,"438,395,79.00000000000003,102.00000000000007",activate_relation,509,PMC6675870__fphar-10-00784-g006.jpg,,1013,787,test,test,1,static/imgs/validation/,Ziting
+6418,BAK,BAX,"636,400,55.00000000000006,96.99999999999997",activate_relation,509,PMC6675870__fphar-10-00784-g006.jpg,,1013,787,test,test,1,static/imgs/validation/,Ziting
+6669,chPL,MEK1,"121,169,156.00000000000003,209.99999999999994",inhibit_relation,509,PMC6675870__fphar-10-00784-g006.jpg,,1013,787,test,test,1,static/imgs/validation/,Ziting
+6670,caspase activation,cell death,"2,813,335,199.00",activate_relation,509,PMC6675870__fphar-10-00784-g006.jpg,,1013,787,test,test,1,static/imgs/validation/,Ziting
+2936, PKCA,IKB,"532.2654418945,230.9043273926,15.1044921875,51.7156982422",activate_relation,515,PMC6322368__medscimonit-24-9413-g008.jpg,,400,640,test,test,1,static/imgs/validation/,Yijie
+2971,EDN1,EDNRB,"272.639251709,194.241104126,98.853515625,24.5835418701",activate_relation,522,PMC3036164__nihms259428f8.jpg,,600,498,test,test,1,static/imgs/validation/,Stuart
+6008,DLX6A,NC differentiation,"166,419,175.99999999999997,127",activate_relation,522,PMC3036164__nihms259428f8.jpg,,600,498,test,test,1,static/imgs/validation/,Stuart
+6687,EDNRB,Alcama,"32,127,313,55.999999999999986",activate_relation,522,PMC3036164__nihms259428f8.jpg,,600,498,test,test,1,static/imgs/validation/,Stuart
+6688,NADL1.1,HAND2,"31,330,255.00000000000006,47.000000000000036",activate_relation,522,PMC3036164__nihms259428f8.jpg,,600,498,test,test,1,static/imgs/validation/,Stuart
+6689,EDN1,Ednra/b,"391,209,81.99999999999997,113",activate_relation,522,PMC3036164__nihms259428f8.jpg,,600,498,test,test,1,static/imgs/validation/,Stuart
+6690,Ednra/b,HAND2,"232,294,240.99999999999994,83.00000000000003",activate_relation,522,PMC3036164__nihms259428f8.jpg,,600,498,test,test,1,static/imgs/validation/,Stuart
+3159,EFFECTORS,TRANSDUCERS,"379.1988830566,270.9372558594,25.0250854492,60.9638366699",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3160,EFFECTORS,DDK,"396.9932861328,385.233581543,30.5101013184,65.6707763672",inhibit_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3161,TRANSDUCERS,EFFECTORS,"402.2886962891,269.1669006348,22.1975708008,63.788269043",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3162,ATR,TRANSDUCERS,"403.0126342773,152.791015625,19.7417297363,62.9326934814",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3163,TRANSDUCERS,ATR,"384.1213378906,152.6961364746,18.8630065918,64.3298492432",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3165,CDKS,EFFECTORS,"379.958190918,384.8805847168,25.2916259766,61.6854553223",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3166,ATR,RPA,"259.9597473145,153.6520690918,123.1334533691,44.0457763672",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6182,DDK,EFFECTORS,"354,349,103.99999999999996,134.99999999999997",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6183,EFFECTORS,CDKS,"354,349,83.99999999999999,138.99999999999997",inhibit_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6191,TRANSDUCERS,EFFECTORS,"335,236,118,130.00",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6200,TRANSDUCERS,ATR,"335,129,118,123",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6203,ATR, FPC,"383,127,189.99999999999997,21.000000000000014",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6204,ATR,H2AX,"383,109,306.99999999999994,39.00000000000002",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6517,CDKS,CELL CYCLE,"343.99999999999994,470,97.99999999999997,137.00000000000003",inhibit_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6518,DDK,CELL CYCLE,"343.99999999999994,469,114,138.00000000000006",inhibit_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6519,CELL CYCLE,CDKS,"343.99999999999994,470,97.99999999999997,137.00000000000003",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+6520,CELL CYCLE,DDK,"343.99999999999994,469,114,138.00000000000006",activate_relation,556,PMC3978517__genes-05-00147-g002.jpg,,626,739,test,test,1,static/imgs/validation/,Yijie
+3176,MEK1/2,ERK1/2,"340.6057739258,238.756439209,20.3284606934,44.5185546875",activate_relation,558,PMC5642883__BMRI2017-9592501.008.jpg,,688,668,test,test,1,static/imgs/validation/,Yijie
+3177,ERK1/2,XS,"338.7215576172,358.4595336914,20.6383666992,62.870300293",activate_relation,558,PMC5642883__BMRI2017-9592501.008.jpg,,688,668,test,test,1,static/imgs/validation/,Yijie
+3178,TPA,MEK1/2,"336.7637939453,39.3342704773,29.2733459473,117.3574066162",activate_relation,558,PMC5642883__BMRI2017-9592501.008.jpg,,688,668,test,test,1,static/imgs/validation/,Yijie
+6205,XS,XS,"339,443,22.999999999999986,148.00000000000009",activate_relation,558,PMC5642883__BMRI2017-9592501.008.jpg,,688,668,test,test,1,static/imgs/validation/,Yijie
+3313,P-GP,CHEMORESISTANCE,"300.1804199219,620.8149414062,51.8986816406,90.1135253906",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+3314, AKT,P-GP,"295.3264465332,441.7499084473,59.2854309082,116.3923034668",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+3315,P53,APOPTOSIS,"195.5149383545,573.6361083984,26.9760284424,47.4680786133",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+3316, AKT,ERK,"96.6035842896,411.3159790039,119.4998092651,61.2180175781",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+3317,PAXILLIN, AKT,"268.2697143555,314.8529663086,41.7384033203,57.9594421387",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+3325, AKT,MMP2,"318.3034057617,407.375,204.3487548828,73.2284851074",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6206, AKT,P53,"0,0,231,551",inhibit_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6211, AKT,MMP9,"244,409,341,97.99999999999999",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6216, AKT,SOX-2,"244,409,221,110.00",inhibit_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6217,SOX-2,DIFFERENTIATION,"395.00000000000006,507,102.99999999999997,133.00000000000003",inhibit_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6220,PROLIFERATION,CHEMORESISTANCE,"4,676.9999999999999,348.99999999999994,55.00000000000006",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6221,APOPTOSIS,CHEMORESISTANCE,"160,629,192.99999999999997,103.00000000000003",inhibit_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6646,ERK,CYCLIN D1,"19,486,69,114.00000000000007",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6647,P53,CYCLIN D1,"19,537,212,63.00000000000009",inhibit_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6648,CYCLIN D1,PROLIFERATION,"4,580,88.00000000000001,112.99999999999987",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6649,MMP9,CELL ATTACHMENT,"505,492,117,189.00",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6650,MMP2,CELL ATTACHMENT,"505,468,117,213.00",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6651,CELL ATTACHMENT,CHEMORESISTANCE,"230,662,392.00000000000006,70.00000000000004",activate_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+6652,CILENGITIDE,INTEGRINS,"105,92,353.00000000000006,40.999999999999986",inhibit_relation,581,PMC5908975__fnmol-11-00130-g0007.jpg,,735,661,test,test,1,static/imgs/validation/,Yijie
+3455,CORTACTIN,ARP,"161.0680541992,244.1384735107,73.9025421143,43.3111419678",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3456,N-WASP,WIP,"134.990447998,140.4607086182,56.1226348877,18.5553741455",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3458,WIP,CORTACTIN,"54.2919235229,174.100769043,38.0567855835,41.4318084717",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3459,ITSN,N-WASP,"283.8396911621,70.7580718994,20.8598632812,47.1147384644",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3460,ITSN,WIP,"103.2375640869,69.5992660522,196.4524993896,63.5648574829",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3461,N-WASP,CDC42,"288.4311218262,69.0231552124,192.6899414062,63.6533432007",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3462,N-WASP,CORTACTIN,"150.8712463379,174.7154998779,146.0815429688,51.1400146484",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3463,N-WASP,ARP,"282.5834960938,171.8880462646,20.4401855469,70.37890625",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+6419,CDC42,N-WASP,"255,140,300,18",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+6420,WIP,N-WASP,"46,140,288,15",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+6662,ARP,actln polymerization,"200,263,203,171.00",activate_relation,601,PMC5148706__nihms828371f2.jpg,,444,600,test,test,1,static/imgs/validation/,Ziting
+3484,MST1/2,LAST1/2,"174.2597198486,42.5421142578,15.083114624,35.9824676514",activate_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6114, YAP, YAP,"225,135,93.00000000000003,144",activate_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6118, YAP, YAP,"81,135,237,27.000000000000007",activate_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6691,LAST1/2, YAP,"81,91,137.99999999999997,71.00000000000001",activate_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6692,CTGF,CTGF mRNA,"388,235,88.00000000000004,90.99999999999997",activate_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6693,CTGF mRNA,CTGF protein,"401.99999999999994,98,75.99999999999997,179.00000000000003",inhibit_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6694,MIRNA-CTGF,CTGF protein,"401.99999999999994,98,232,49.999999999999986",inhibit_relation,609,PMC5788631__oncotarget-09-2175-g012.jpg,,339,712,test,test,1,static/imgs/validation/,Stuart
+6120,TKIS,TK,"265,119,25.000000000000032,79.99999999999999",inhibit_relation,625,PMC3502787__CHRP2012-817304.002.jpg,,336,600,test,test,1,static/imgs/validation/,Stuart
+6695, P85,Akt/,"133,172,45,79.99999999999999",activate_relation,625,PMC3502787__CHRP2012-817304.002.jpg,,336,600,test,test,1,static/imgs/validation/,Stuart
+6696,TKIs,TK,"193,112,28.99999999999999,90.00000000000001",activate_relation,625,PMC3502787__CHRP2012-817304.002.jpg,,336,600,test,test,1,static/imgs/validation/,Stuart
+6697,TKIS,PI3K,"265,168,77.00000000000003,30.999999999999982",activate_relation,625,PMC3502787__CHRP2012-817304.002.jpg,,336,600,test,test,1,static/imgs/validation/,Stuart
+6698, P85,Akt/,"356,163,54.99999999999998,107.99999999999997",activate_relation,625,PMC3502787__CHRP2012-817304.002.jpg,,336,600,test,test,1,static/imgs/validation/,Stuart
+3791,ATM,SER15,"584.0364379883,197.7274932861,48.362121582,44.6849060059",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+3792,OH,PKCdelta,"302.7699584961,124.3165588379,90.0036315918,46.2559204102",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+3793,PKCdelta,P21,"140.7679290771,189.1813049316,112.3889465332,64.1929168701",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+3794,NAG-1,APOPTOSIS,"402.128112793,292.1985168457,93.7663269043,144.324432373",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+3795,P53,APOPTOSIS,"536.3487548828,300.7781066895,98.5251464844,152.5407104492",inhibit_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+6289,PKCdelta,NAG-1,"252,172,164,107",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+6290,P21,PROLIFERATION,"116,271,191,209",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+6291,OH,ATM,"381,94,199,87",activate_relation,653,PMC2988105__nihms224319f6.jpg,,507,800,test,test,1,static/imgs/validation/,Joshua
+3802, AKT,NFKB,"313.6442260742,183.318145752,51.8139343262,11.7057647705",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6421, AKT, AKT,"371,121,12.99999999999997,71.00000000000004",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6422, AKT,NFKB,"280,185.00000000000003,104,7.000000000000018",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6423,NFKB,BcL2,"183,183,119.99999999999996,9.00000000000003",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6424,NFKB,bcl-x,"178,185.00000000000003,124.99999999999997,37.000000000000014",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6663,apoptosome complex,executioner caspases,"73,243,128,77.00000000000003",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6664,executioner caspases,apoptosis,"73,305,128,59.999999999999964",activate_relation,655,PMC3068308__PRI2011-620601.004.jpg,,367,465,test,test,1,static/imgs/validation/,Ziting
+6126,CRK,RAC1,"26,199,167,129.00",activate_relation,661,PMC2172299__200312013f8.jpg,,502,720,test,test,1,static/imgs/validation/,Stuart
+6127,PY861,RAC1,"119,205,182.99999999999997,123.00000000000003",activate_relation,661,PMC2172299__200312013f8.jpg,,502,720,test,test,1,static/imgs/validation/,Stuart
+6128,RAC1,Integrin-mediated Cell Motility,"45,304,228,179",activate_relation,661,PMC2172299__200312013f8.jpg,,502,720,test,test,1,static/imgs/validation/,Stuart
+6129,RAC1,Plasma Membrane Dynamics,"119,142.00000000000003,243.00000000000006,323",activate_relation,661,PMC2172299__200312013f8.jpg,,502,720,test,test,1,static/imgs/validation/,Stuart
+6130,Plasma Membrane Dynamics,N-Cadherin Adhesion,"320.00000000000006,142.00000000000003,147.99999999999997,323",activate_relation,661,PMC2172299__200312013f8.jpg,,502,720,test,test,1,static/imgs/validation/,Stuart
+6131,N-Cadherin Adhesion,Plasma Membrane Dynamics,"320.00000000000006,142.00000000000003,147.99999999999997,323",activate_relation,661,PMC2172299__200312013f8.jpg,,502,720,test,test,1,static/imgs/validation/,Stuart
+3980,CHK1,CDC25C,"370.8927001953,292.1018371582,20.7059020996,45.9709472656",inhibit_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+3983,GL,PH2AX,"196.5309906006,56.1704673767,14.055770874,55.1588554382",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+3985,ATM,CHK1,"374.0815734863,181.1275482178,15.0723266602,64.2520904541",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+3986,PH2AX,ATM,"222.3735198975,116.5505599976,96.1256256104,25.8461074829",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+6425, NAC,PH2AX,"142,13,207,148",inhibit_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+6426,ATM,PH2AX,"142,150,278,13",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+6427,p-CDK,CDK1,"169,385,423,14",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+6428,p-CDK,G2,"25,385,201,94",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+6665,ATM,apoptosis,"86,150,334,149",activate_relation,681,PMC4826221__oncotarget-07-4490-g009.jpg,,488,650,test,test,1,static/imgs/validation/,Ziting
+4194,RAF,MEK1/2,"81.1409835815,584.7219238281,22.1381912231,54.2743530273",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6300,PIP3,PLCR,"370,29,144.99999999999994,119",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6301,PLCR,PIP2,"370,134,92.99999999999997,118.00000000000003",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6302,PIP2, PKC,"320.99999999999994,239,142.00000000000003,117.99999999999997",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6303, PKC,MEK1/2,"73,343,287.99999999999994,328.00000000000006",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6304,ERK1/2, AKT,"154,761,154.99999999999997,121.99999999999996",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6305,PIP3, AKT,"290,29,224.99999999999994,854",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6306,PLCR, PKC,"320.99999999999994,134,94.00000000000001,223",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6307,PKA, AKT,"272,448,39.99999999999998,434.9999999999999",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6308, PKC,RAF,"83,343,277.99999999999994,224.99999999999994",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6309,PKA,RAF,"83,448,228.99999999999994,119.99999999999993",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6676,PIP3,PIP2,"420,29,94.99999999999999,223",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6677, PKC,PKA,"272,343,88.99999999999997,118.00000000000004",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6678, PKC,P38,"320.99999999999994,343,94.00000000000001,228",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6679, PKC,JNK,"320.99999999999994,343,247.99999999999994,223",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6680,PKA,MEK1/2,"73,448,238.99999999999994,223",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6681,PKA,ERK1/2,"154,448,157.99999999999994,326.99999999999994",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6682,PKA,P38,"272,448,143,123.00",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6683,PKA,JNK,"272,448,296.99999999999994,117.99999999999997",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+6684,MEK1/2,ERK1/2,"73,658,137.00000000000003,116.99999999999996",activate_relation,724,PMC3233205__nihms323230f1.jpg,,912,654,test,test,1,static/imgs/validation/,Joshua
+4403,GULP,DYN-1,"566.3726806641,350.8733825684,26.6893310547,50.6578369141",activate_relation,760,PMC3521709__pgen.1003115.g001.jpg,,645,656,test,test,1,static/imgs/validation/,mihail
+4404,ABC1, CED-1,"566.7597045898,86.7485961914,26.5413818359,40.7613983154",activate_relation,760,PMC3521709__pgen.1003115.g001.jpg,,645,656,test,test,1,static/imgs/validation/,mihail
+4405,MEGF10, CED-6,"567.2051391602,223.542678833,26.3120727539,34.7098846436",activate_relation,760,PMC3521709__pgen.1003115.g001.jpg,,645,656,test,test,1,static/imgs/validation/,mihail
+5918,DOCK180,CED-10,"168,181,156.00000000000003,122.00000000000003",activate_relation,760,PMC3521709__pgen.1003115.g001.jpg,,645,656,test,test,1,static/imgs/validation/,mihail
+6328,CRKII,CED-10,"247,46,77.00000000000001,257.00000000000006",activate_relation,760,PMC3521709__pgen.1003115.g001.jpg,,645,656,test,test,1,static/imgs/validation/,mihail
+6329,CRKII,CED-5,"186.00000000000003,46,123,127",activate_relation,760,PMC3521709__pgen.1003115.g001.jpg,,645,656,test,test,1,static/imgs/validation/,mihail
+4407,GM6001,MMP-9,"336.0461730957,258.0925598145,26.8577880859,38.7177124023",inhibit_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+4408,MG132, NF-KB,"139.466583252,191.5219421387,31.850479126,18.9061431885",inhibit_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+4409, NF-KB,IKB-A,"87.6698913574,181.9217071533,50.672454834,29.3901672363",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+6137, NF-KB, NF-KB,"109,165,50.000000000000014,80.00000000000003",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+6138, NF-KB, NF-KB,"109,230,48.99999999999999,83.99999999999997",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+6139,MMP-9,MMP-9,"221,256,151.99999999999997,57.99999999999998",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+6140, NF-KB,MMP-9,"117,256,150.00000000000003,57.99999999999998",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+6141,MMP-9,Infiltrated Leukocyte,"328,303,320,60.000000000000036",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+6142,Tight junction,Claudin-5 segments,"308,11.000000000000002,341.00000000000006,114",activate_relation,761,PMC3591436__pone.0053370.g006.jpg,,512,652,test,test,1,static/imgs/validation/,Stuart
+4437,SMO,GLI,"180.5280151367,156.6572113037,229.9795227051,256.1566772461",activate_relation,766,PMC6820189__10.1177_1559325819885293-fig2.jpg,,713,660,test,test,1,static/imgs/validation/,Ziting
+6437,GLI,GLIACT,"117,423,408.9999999999999,34.000000000000014",activate_relation,766,PMC6820189__10.1177_1559325819885293-fig2.jpg,,713,660,test,test,1,static/imgs/validation/,Ziting
+4542,JNK, AP-1,"318.3922119141,219.172164917,20.2215881348,96.2025299072",activate_relation,779,PMC5037850__ijms-17-01585-g001.jpg,,832,696,test,test,1,static/imgs/validation/,Ziting
+6438, AP-1,FAS,"303,346.99999999999994,323,18.000000000000014",activate_relation,779,PMC5037850__ijms-17-01585-g001.jpg,,832,696,test,test,1,static/imgs/validation/,Ziting
+6439,JNK,BCL,"75,177.00000000000003,282.00000000000006,96.99999999999997",activate_relation,779,PMC5037850__ijms-17-01585-g001.jpg,,832,696,test,test,1,static/imgs/validation/,Ziting
+6666,caspase3,cell death,"237,555,160,199.00",activate_relation,779,PMC5037850__ijms-17-01585-g001.jpg,,832,696,test,test,1,static/imgs/validation/,Ziting
+6667,cytochrome c,caspase3,"262,454,219.00000000000006,138.00000000000003",activate_relation,779,PMC5037850__ijms-17-01585-g001.jpg,,832,696,test,test,1,static/imgs/validation/,Ziting
+4558,LYM,IFN-Y,"340.0549316406,734.9065551758,43.846282959,69.2621459961",activate_relation,782,PMC4057701__ijms-15-07711f2.jpg,,1305,787,test,test,1,static/imgs/validation/,Joshua
+4559, NF-KB, IL-12,"301.250579834,295.7521972656,77.1332397461,186.0369262695",activate_relation,782,PMC4057701__ijms-15-07711f2.jpg,,1305,787,test,test,1,static/imgs/validation/,Joshua
+4560,TRIF, NF-KB,"341.5880126953,165.5416107178,115.6141967773,152.5125274658",activate_relation,782,PMC4057701__ijms-15-07711f2.jpg,,1305,787,test,test,1,static/imgs/validation/,Joshua
+6317, IL-12,LYM,"320,484,87.00000000000001,201.00000000000003",activate_relation,782,PMC4057701__ijms-15-07711f2.jpg,,1305,787,test,test,1,static/imgs/validation/,Joshua
+6501,IFN-Y,Hepatic granulomas,"175.00000000000003,814,367.99999999999994,479",activate_relation,782,PMC4057701__ijms-15-07711f2.jpg,,1305,787,test,test,1,static/imgs/validation/,Joshua
+4582,IGF-1,IGF-1R,"335.9219360352,376.2900390625,30.4887390137,50.4446411133",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+4583,ATM,IGF-1,"336.7342529297,272.5973510742,28.9217529297,48.6117553711",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+4584,EGR-1,SCLU,"337.2862854004,698.5745849609,29.9034118652,50.630859375",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6245,AAI,ATM,"114,228,271.99999999999994,33.99999999999999",inhibit_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6246,AG1024,IGF-1R,"4,438,413,34.999999999999964",inhibit_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6536,IGF-1R,MAPK PATHWAY,"204,441,291.00000000000006,145.00000000000003",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6537,MAPK PATHWAY,EGR-1,"204,537,291.00000000000006,155",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6538,SCLU,"CELLULAR SENESCENCE (RS, SIPS)","299,228,461.9999999999999,563",inhibit_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6539,EXPOSED TELOMERE,ATM,"308,1,273.00000000000006,261",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6540,EXPOSED TELOMERE,"CELLULAR SENESCENCE (RS, SIPS)","407,1,353.99999999999994,385",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6541,PERSISTENT DNA  DAMAGE,"CELLULAR SENESCENCE (RS, SIPS)","64,1,696.9999999999999,385",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+6542,PERSISTENT DNA  DAMAGE,ATM,"64,1,322,261",activate_relation,784,PMC4061041__pone.0099983.g006.jpg,,795,765,test,test,1,static/imgs/validation/,Yijie
+4645,JNK.P38,FOXP3,"300.976348877,184.0587615967,90.2027893066,81.6053924561",inhibit_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+4647,FOXP3,ITREG,"452.7989807129,289.0950622559,56.526550293,22.9767150879",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+4650,RORYT,TH17,"453.8264770508,133.4199523926,57.3575744629,23.4808959961",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+4652,FOXP3,RORYT,"397.0348815918,188.3583679199,21.3253173828,68.535369873",inhibit_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6344,TGF-beta,TGF-beta RI II,"7,126,151.00000000000003,92.00000000000001",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6345,TGF-beta,TGF-beta RI II,"7,205,151.00000000000003,102",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6346,TGF-beta RI II,SMAD 7,"104,126,181.00000000000003,15.00000000000001",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6347,TGF-beta RI II,SMAD 2/3,"107,282,186.00000000000006,25",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6348,SMAD 2/3,FOXP3,"238,282,182.99999999999997,31.000000000000007",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6349,SMAD 7,RORYT,"240.00000000000006,126,181.00000000000003,31.99999999999999",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6350,IL-6,TGF-beta RI II,"103,7,55.000000000000014,134.00000000000003",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+6555,IL-2,Boy,"103,327,33.99999999999999,78.99999999999999",activate_relation,796,PMC3087811__nihms286343f8.jpg,,413,602,test,test,1,static/imgs/validation/,Stuart
+4667,GRB2,AKT1,"489.7493591309,48.8657684326,37.7547912598,31.5397796631",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4668,SGK1,CCND1,"196.797164917,114.1626281738,41.5246582031,46.871963501",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4669,FGFR2,AKT1,"553.8041992188,95.4583816528,37.3479614258,31.4080200195",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4670,FGFR4,RAP1A,"665.2410888672,55.1633987427,23.1931762695,51.2266387939",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4671,TSC2,PTEN,"360.8950195312,131.0588989258,27.6572265625,52.9468994141",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4672,SGK1,ITGB5,"250.9656829834,50.2691192627,40.7458648682,42.9290847778",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4673,KDR,CCND1,"157.2488708496,174.972366333,28.5984039307,23.0975341797",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4674,CDH1,YWHAZ,"9.2250766754,29.1955928802,26.3925991058,51.8096313477",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4675,HRAS,CALM1,"86.0875930786,28.3813457489,25.8235244751,53.1391677856",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4676,COL4A5,FGFR3,"165.6224517822,30.1925392151,17.3167419434,49.9016838074",activate_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4677,TSC2,LAMA2,"383.0727844238,54.7061195374,23.0355224609,52.7133140564",activate_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4678,PRKCI,PPP2R3A,"745.2890625,53.2672691345,13.9189453125,51.4519386292",activate_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+6251,TSC2,LAMA2,"377,38,39.999999999999936,83.99999999999999",activate_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+6252,SGK1,ITGB5,"233,38,72.99999999999999,68",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+6253,KDR,CCND1,"130,161,81.99999999999999,48.000000000000014",inhibit_relation,799,PMC5850946__12859_2018_2036_Fig5_HTML.jpg,,221,776,test,test,1,static/imgs/validation/,Yijie
+4987,RHPN2,RARgamma,"436.445892334,559.2733764648,156.8402404785,52.1730957031",inhibit_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+4988,NOGGIN,BMP4,"453.156036377,749.5112304688,149.6703796387,47.6782836914",inhibit_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+4989,BMP4,pSMAD1,"656.0289306641,804.2678833008,38.126159668,80.9780273438",activate_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+4991,RARgamma,NOGGIN,"356.8268127441,606.3706054688,38.9161682129,153.8703613281",activate_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+6358,SIRT1,RARgamma,"312,392,144,226",inhibit_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+6359,RAB3D,NOGGIN,"12,392,499,402",activate_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+6363,NOGGIN,Neural differentiation,"203,749.9999999999999,335.00000000000006,298.0000000000001",activate_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+6364,pSMAD1,Neural differentiation,"203,882,550.0000000000001,166.00000000000006",inhibit_relation,837,PMC5241026__nihms839270f8.jpg,,1050,755,test,test,1,static/imgs/validation/,Stuart
+5030,CTF,GPCR,"57.4578170776,52.091217041,23.5627288818,49.2489318848",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+5031,HB-EGF,EGFR,"495.9961547852,66.7024765015,46.6535644531,41.8156890869",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6255,ADAM-10/12,HB-EGF,"255,59,234,90.99999999999999",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6547,GPCR,GAI/GBY,"39,127,142.00000000000003,145",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6653,GAI/GBY,CA2+,"66,235,246,42.999999999999986",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6654,GAI/GBY,PKC,"66,235,242,83.00000000000001",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6655,GAI/GBY,NAD(P)H OXIDASE,"66,235,342,128",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6656,CA2+,ADAM-10/12,"254,124,159.00000000000006,154",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6657,PKC,ADAM-10/12,"255,124,158.00000000000006,194",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6658,NAD(P)H OXIDASE,ADAM-10/12,"196,124,217.00000000000006,239",activate_relation,842,PMC4252843__nihms611316f5.jpg,,368,624,test,test,1,static/imgs/validation/,Yijie
+6616,PTCH,SMO,"55,12,175,11.000000000000002",inhibit_relation,856,PMC5949124__IBJ-22-217-g001.jpg,,433,690,test,test,1,static/imgs/validation/,Yibo
+6618,PTCH,SMO,"463,14,174.99999999999994,11.000000000000002",activate_relation,856,PMC5949124__IBJ-22-217-g001.jpg,,433,690,test,test,1,static/imgs/validation/,Yibo
+6619,SMO,"GLI(GLI1,2,3)","509,15,128.99999999999997,176.99999999999997",activate_relation,856,PMC5949124__IBJ-22-217-g001.jpg,,433,690,test,test,1,static/imgs/validation/,Yibo
+6620,"GLI(GLI1,2,3)",TARGET GENES,"506,150.99999999999997,92.00000000000003,195.00000000000003",activate_relation,856,PMC5949124__IBJ-22-217-g001.jpg,,433,690,test,test,1,static/imgs/validation/,Yibo
+5183,NFkB,MMP-9,"381.3243103027,443.6965637207,40.5856933594,54.2304992676",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+5185,CYPA,NFkB,"307.2192993164,370.0458679199,55.4297790527,43.8041381836",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+5186,APOE4,LRP1,"409.6695556641,141.3744659424,87.5268249512,122.964553833",inhibit_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+5187,APOE2,LRP1,"224.0694580078,137.421875,147.7418518066,130.2588806152",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+5191,APOE3,LRP1,"375.9088134766,118.0366210938,25.8988647461,124.3306274414",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6365,LRP1,CYPA,"258,271,103.99999999999997,105.99999999999997",inhibit_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6366,MMP-9,basement membrane degradation,"251,504,198,182.00",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6367,MMP-9,tight juction degradation,"365,504,231,190.00",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6368,basement membrane degradation,BBB breakdown,"251,581,238,225.00",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6369,tight juction degradation,BBB breakdown,"324,581,272.00000000000006,224.99999999999986",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6370,BBB breakdown,Neuronal dysfunction,"324,724,165.00000000000003,194.99999999999997",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+6371,Neuronal dysfunction,Neurodegeneration,"279,837,248,151",activate_relation,868,PMC3920964__cddis2013410f5.jpg,,989,787,test,test,1,static/imgs/validation/,Stuart
+5319,BECN1,SQSTM1,"146.0665588379,658.9372558594,66.533782959,187.2182617188",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+5321,BECN1,LC3B,"239.2739715576,659.8294677734,93.7061920166,186.1959228516",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6375,EtOH,FoxO1,"297,8,108,214",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6376,FoxO1,AMPK,"297,158,108,228",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6377,AMPK,MTORC1,"305,337,415,106",inhibit_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6378,AMPK,ULK 1,"305,337,239,189",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6379,AMPK,PIK3C3,"148,337,253,225",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6380,ULK 1,BECN1,"214,488,330,125",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6381,BECN1,ATG7,"214,596,279,296",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+6556,MTORC1,ULK 1,"461,426,259,100",activate_relation,893,PMC5404978__nihms860625f10.jpg,,919,800,test,test,1,static/imgs/validation/,Stuart
+5415,HIF1A,P70S6KB,"494.5568847656,102.552192688,26.7011108398,74.4387741089",activate_relation,912,PMC6643126__ijmsv16p0960g005.jpg,,596,728,test,test,1,static/imgs/validation/,Ziting
+5416,P70S6KB,PKM2,"494.3240966797,255.0082244873,26.9885253906,73.8034515381",activate_relation,912,PMC6643126__ijmsv16p0960g005.jpg,,596,728,test,test,1,static/imgs/validation/,Ziting
+5417,PKM2,EMT,"495.1279907227,413.8106689453,25.7891235352,75.579498291",activate_relation,912,PMC6643126__ijmsv16p0960g005.jpg,,596,728,test,test,1,static/imgs/validation/,Ziting
+6668,metformin,HIF1A,"45,38,505,106.00000000000003",inhibit_relation,912,PMC6643126__ijmsv16p0960g005.jpg,,596,728,test,test,1,static/imgs/validation/,Ziting
+5453,SMO,MYC,"219.8545379639,150.5636138916,60.8167877197,141.9528656006",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6324,PTCH,SMO,"150,81,103,77",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6325,GLI,GLI,"58,219,130,96",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6326,SMO,SUFU,"133,114,120,110",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6327,SHH,PTCH,"135,8,60,150",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6502,GLI,Target genes,"151,301,136,148",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6503,MYC,Target genes,"161,302,144,147",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+6504,Cyclopamine HhAntag,SMO,"204,1,194,128",activate_relation,918,PMC2659383__bpa0019-0132-f3.jpg,,458,400,test,test,1,static/imgs/validation/,Joshua
+5501,LDHA,LACTATE,"473.5375976562,245.2590789795,26.2397155762,45.3767852783",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+5503,HFD,OBESE,"298.6829833984,520.2518920898,20.7734985352,36.628112793",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+5504,ND,LEAN,"125.6215133667,519.9208984375,19.5225143433,35.9755249023",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+5505,LEAN,OBESE,"188.9152526855,548.9759521484,68.9350280762,44.0195922852",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+5509,VEGF,OSTEOARTHRITIS,"549.2667236328,474.6416320801,114.557434082,44.9714050293",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+5510,TLR4,IL-6,"449.1340026855,98.0485534668,266.1218566895,254.6470947266",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6549,HIF1 A,VEGF,"490,362,86.99999999999994,122",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6550,LACTATE,HIF1 A,"430,291,132.00000000000003,96.99999999999997",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6551,HIF1 A,TNF A,"490,349,294.9999999999999,38.999999999999964",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6552,HIF1 A,IL-1 B,"490,362,290.00000000000006,43.00000000000002",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6553,IL-1 B,OSTEOARTHRITIS,"582,378,201.00000000000003,200.99999999999994",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6554,TNF A,OSTEOARTHRITIS,"582,349,202.99999999999994,229.99999999999994",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6659,IL-6,OSTEOARTHRITIS,"582,330.00000000000006,201.00000000000003,248.99999999999991",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6660,TLR4,TNF A,"444,62,340.99999999999994,313",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+6661,TLR4,IL-1 B,"444,62,336.0000000000001,343",activate_relation,926,PMC4536527__srep13092-f8.jpg,,594,787,test,test,1,static/imgs/validation/,Yijie
+5557,EGL-1/CED-13,CED-9,"223.1995391846,554.9890136719,76.8371734619,64.3687744141",inhibit_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+5558,CED-3,APOPTOSIS,"169.6886138916,951.8214111328,42.0157775879,69.4617919922",activate_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+5559, DLC-1,KRI-1,"188.0416717529,95.8838806152,94.4153289795,88.3630371094",inhibit_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+5560, CED-4,CED-3,"169.2175598145,822.9505004883,42.1116943359,68.5045776367",activate_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+5561,IR, CEP-1,"464.2289123535,203.8894195557,169.3348693848,148.4709014893",activate_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+6332, CEP-1,EGL-1/CED-13,"242,354,263.00000000000006,182.99999999999997",activate_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+6333,KRI-1,EGL-1/CED-13,"242,172,263.00000000000006,364.99999999999994",activate_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+6334,IR, DLC-1,"86,42,581,146.99999999999997",inhibit_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+6335, DLC-1,LIN-35,"34,42,157.00000000000003,494.0000000000001",inhibit_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+6336,CED-9, CED-4,"140,628,115,166.00",inhibit_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+6337,LIN-35,CED-9,"34,508,221,152.00",inhibit_relation,932,PMC3789177__cddis2013319f6.jpg,,1074,668,test,test,1,static/imgs/validation/,Joshua
+5829,P-STAT3,P-STAT3,"213.46925354,228.6902313232,71.7088775635,133.8462677002",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+5830,IL6R,P-STAT3,"318.4681396484,115.6416625977,92.4852905273,84.1526794434",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+5832, PD-L1,EMT,"76.7510910034,301.3351135254,23.9371948242,52.4158325195",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+5834, PD-L1,INVASION,"116.0790710449,299.3339538574,35.3169403076,56.7465209961",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+5835,P-STAT3, PD-L1,"130.8985595703,365.8681030273,81.1299285889,28.2912597656",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+6382,IDO1,IDO1,"339,233,134.00000000000006,153.00000000000006",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+6383,IDO1,KYNURENINE,"451,233,123.99999999999996,25.99999999999998",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+6384, PD-L1,MIGRATION,"11,288,108,91.99999999999997",activate_relation,975,PMC6307990__gr7.jpg,,492,768,test,test,1,static/imgs/validation/,Stuart
+5846,PAKT, NF-KB,"474.2791748047,193.9529571533,62.5854492188,47.1204528809",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+6386,P,PI3K,"339,105,135.00000000000006,32.99999999999999",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+6387, AKT,PAKT,"338,179,253.99999999999994,20.000000000000007",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+6389,IKB,pIKB,"311,235,109.00000000000004,145.00000000000003",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+6390,IKB, NF-KB,"362,235,78.00000000000003,178.00000000000003",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+6391, NF-KB, NF-KB,"392,399,62.00000000000002,147",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+6392, NF-KB,Lipcalin 2 Transcription,"251,466,203.00000000000006,80.00000000000003",activate_relation,977,PMC3946494__nihms540696f6.jpg,,609,714,test,test,1,static/imgs/validation/,Stuart
+5909, AKT,MTOR,"272.5244445801,297.1828613281,23.8885192871,53.6316833496",activate_relation,987,PMC6451008__41419_2019_1542_Fig1_HTML.jpg,,728,633,test,test,1,static/imgs/validation/,Yijie
+5910,SNO-PTEN, AKT,"273.1061401367,176.4517669678,22.012298584,53.4079742432",activate_relation,987,PMC6451008__41419_2019_1542_Fig1_HTML.jpg,,728,633,test,test,1,static/imgs/validation/,Yijie
+5911,NOS1,NO,"366.1883239746,0.0,168.4945373535,69.3080749512",activate_relation,987,PMC6451008__41419_2019_1542_Fig1_HTML.jpg,,728,633,test,test,1,static/imgs/validation/,Yijie
+6258,PTEN,SNO-PTEN,"217,140.99999999999997,355.99999999999994,24.99999999999999",activate_relation,987,PMC6451008__41419_2019_1542_Fig1_HTML.jpg,,728,633,test,test,1,static/imgs/validation/,Yijie
+6259,MTOR,AUTOPHAGY,"227,368.99999999999994,130.00000000000003,146.99999999999994",inhibit_relation,987,PMC6451008__41419_2019_1542_Fig1_HTML.jpg,,728,633,test,test,1,static/imgs/validation/,Yijie
