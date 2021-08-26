@@ -57,5 +57,5 @@ if __name__ == "__main__":
         shapes = getShapes(img[1])
         output_path = os.path.join(im_dir, image_name.replace('.jpg', '') + ".json")
         template_label_file = label_file.LabelFile()
-        template_label_file.save(output_path, shapes, image_name, imageHeight,
-                                 imageWidth)
+        template_label_file.save(output_path, shapes, image_name, imageHeight, imageWidth)
+        shapes.clear()

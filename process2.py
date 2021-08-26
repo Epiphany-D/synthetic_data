@@ -998,14 +998,15 @@ class copy_thread(threading.Thread):
             # template_im = cv2.rectangle(template_im, (x_target, y_target), (x_target+x_dim, y_target+y_dim), (0,0,0), 1)
             # if relation_idx == 2:
             #     break
-
+        # os.path.basename()
         # save json and new image
-        im_dir = "output_test"
+        im_dir = "output_img"
         image_path = str(self.copyID) + ".png"
         cv2.imwrite(os.path.join(im_dir, image_path), template_im)
         imageHeight = template_im.shape[0]
         imageWidth = template_im.shape[1]
         template_label_file = label_file.LabelFile()
+        im_dir = "output_json"
         template_label_file.save(os.path.join(im_dir, str(self.copyID) + ".json"), shapes, image_path, imageHeight,
                                  imageWidth)
 
