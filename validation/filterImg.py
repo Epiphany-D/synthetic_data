@@ -3,8 +3,8 @@ import shutil
 
 import pandas as pd
 
-fname = pd.read_csv('validation/figurename.csv')
-filePath = 'validation'
+fname = pd.read_csv('../validation/figurename.csv')
+filePath = '../validation'
 for file in os.listdir(filePath):
     for name in fname['name']:
         if file == name:

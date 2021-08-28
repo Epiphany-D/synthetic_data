@@ -32,7 +32,7 @@ def getShapes(element):
 
 
 if __name__ == "__main__":
-    path = '45_all_text.csv'
+    path = 'match_pics/45_all_text.csv'
     im_dir = 'synthetic_json'
     shapes = []
     base_shape = {
