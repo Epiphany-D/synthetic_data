@@ -1,0 +1,12 @@
+Activate:
+0:activate: NF-KB1| IL-1B
+1:activate: NF-KB1| IL-1B
+2:activate:COX-2|MCP-1
+3:activate:MEKPKCA|MCP-1
+4:activate: ROS| NF-KB1
+5:activate: ROS|MEKPKCA
+6:activate: ROS|MEKPKCA
+7:activate:NEURO-INFLAMMATION|MCP-1
+Inhibit:
+0:inhibit:PPARS| NF-KB1
+1:inhibit:MEKPKCA|PPARS

@@ -1,0 +1,11 @@
+Activate:
+0:activate:P-CDK1|ARREST
+1:activate:GL|PH2AX
+2:activate:P-CHK1|APOPTOSIS
+3:activate:ATRP-ATM|P-CHK1
+4:activate:PH2AX|ATRP-ATM
+Inhibit:
+0:inhibit:P-CHK1|CDC25C
+1:inhibit: NAC|GL
+2:inhibit:UCN-01|CAFFEINE
+3:inhibit:P-CHK1|UCN-01

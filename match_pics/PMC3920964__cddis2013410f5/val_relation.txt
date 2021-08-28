@@ -1,0 +1,16 @@
+Activate:
+0:activate:NFKB|MMP-9
+1:activate:MEMBRANE|DEGRADATION
+2:activate:JUNCTION|DEGRADATION
+3:activate:BREAKDOWN|NEURONAL
+4:activate:CYPA|NFKB
+5:activate:NEURONAL|DYSFUNCTION
+6:activate:APOE2|LRP1
+7:activate:MMP-9|TIGHT
+8:activate:MMP-9|BASEMENT
+9:activate:LRP1|CYPA
+10:activate:APOE3|LRP1
+11:activate:BASEMENT|TIGHT
+12:activate:APOE4|LRP1
+Inhibit:
+0:inhibit:APOE4|LRP1

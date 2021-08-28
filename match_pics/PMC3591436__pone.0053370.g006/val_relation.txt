@@ -1,0 +1,12 @@
+Activate:
+0:activate: NF-KB1|MMP-9
+1:activate: NF-KB1| NF-KB1
+2:activate: NF-KB1| NF-KB1
+3:activate: NF-KB1|IKB-A
+4:activate:MMP-9|MMP-9
+5:activate:EPITHELIUM|SEGMENTS
+6:activate:GM6001|MMP-9
+7:activate: NF-KB1| NF-KB1
+Inhibit:
+0:inhibit:GM6001|MMP-9
+1:inhibit:MG132| NF-KB1

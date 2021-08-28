@@ -1,0 +1,16 @@
+Activate:
+0:activate:ANG|ATIR
+1:activate:LXR-A|P38ATIR
+2:activate: PFD|LXR-A
+3:activate: PFD|LXR-A
+4:activate:ACE|ANG
+5:activate:P38ATIR|ACE
+6:activate:LXR-A|MAPK
+7:activate:ATIR|CARDIAC
+8:activate: DAMAGE|P38ATIR
+9:activate:P38ATIR|LXR-A
+10:activate:MAPK|LXR-A
+Inhibit:
+0:inhibit:ANG(1-7)|MAS
+1:inhibit:ACE2|ANG(1-7)
+2:inhibit:MAPK|ACE2

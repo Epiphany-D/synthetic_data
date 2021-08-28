@@ -1,0 +1,8 @@
+Activate:
+0:activate_relation:PI3K| AKT(not match perfectly)
+1:
+2:activate_relation:EPC|AMD3100
+3:activate_relation:GB|PI3K
+Inhibit:
+0:
+1:inhibit_relation:AMD3100|CXCR4

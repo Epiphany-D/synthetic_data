@@ -1,0 +1,13 @@
+Activate:
+0:activate:EFFECTORS|TRANSDUCERS
+1:activate:TRANSDUCERS|EFFECTORS
+2:activate:ATR|TRANSDUCERS
+3:activate:TRANSDUCERS|ATR
+4:activate:ATRIP|O-1-1
+5:activate:CDKS|EFFECTORS
+6:activate:ATR|RPA
+7:activate:CYCLE|CDKS
+8:activate:TOPBP1| FPC
+Inhibit:
+0:inhibit:DDK|CYCLE
+1:inhibit:EFFECTORS|DDK

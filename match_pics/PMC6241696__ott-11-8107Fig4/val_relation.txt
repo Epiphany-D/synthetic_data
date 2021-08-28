@@ -1,0 +1,7 @@
+Activate:
+0:activate:FSHR|PKA
+1:activate:CASP3|CERVICAL
+2:activate:NF-KB(P65)| NF-KB1
+Inhibit:
+0:inhibit:GSK3B|NF-KB(P65)
+1:inhibit:PKA|GSK3B

@@ -1,0 +1,11 @@
+Activate:
+0:activate:PATHWAY|IGF-1R
+1:activate:PATHWAY|EGR-1
+2:activate:IGF-1|IGF-1R
+3:activate:ATM|IGF-1
+4:activate:EGR-1|SCLU
+5:activate:ATM|CELLULAR
+6:activate: DAMAGE|ATM
+Inhibit:
+0:inhibit:AAI|H
+1:inhibit:AG1024|H

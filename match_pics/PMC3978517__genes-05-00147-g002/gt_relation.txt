@@ -1,0 +1,13 @@
+Activate:
+0:activate_relation:EFFECTORS|TRANSDUCERS
+1:activate_relation:TRANSDUCERS|EFFECTORS
+2:activate_relation:EFFECTORS|TRANSDUCERS(not match perfectly)
+3:activate_relation:TRANSDUCERS|EFFECTORS(not match perfectly)
+4:
+5:activate_relation:TRANSDUCERS|EFFECTORS(not match perfectly)
+6:activate_relation:ATR|TRANSDUCERS(not match perfectly)
+7:activate_relation:CELL CYCLE|CDKS(not match perfectly)
+8:activate_relation:ATR| FPC(not match perfectly)
+Inhibit:
+0:inhibit_relation:DDK|CELL CYCLE(not match perfectly)
+1:inhibit_relation:EFFECTORS|DDK

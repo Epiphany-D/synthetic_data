@@ -1,0 +1,18 @@
+Activate:
+0:activate:P-GP|CHEMORESISTANCE
+1:activate:AKT|P-GP
+2:activate:P53|APOPTOSIS
+3:activate:AKT|ERK
+4:activate:PAXILLIN|AKT
+5:activate:AKT|P53
+6:activate:CYCLIN|PROLIFERATION
+7:activate:CELL|DIFFERENTIATION
+8:activate:ERK|CYCLIN
+9:activate:CHEMORESISTANCE|APOPTOSIS
+10:activate:PROLIFERATION|APOPTOSIS
+11:activate:P53| D1
+12:activate:AKT|MMP2
+13:activate:MMP9|ATTACHMENT
+Inhibit:
+0:inhibit:P53| D1
+1:inhibit:AKT|MMP2

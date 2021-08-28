@@ -1,0 +1,11 @@
+Activate:
+0:activate_relation:IGF-1|IGF-1R(not match perfectly)
+1:activate_relation:MAPK PATHWAY|EGR-1(not match perfectly)
+2:activate_relation:IGF-1|IGF-1R
+3:activate_relation:ATM|IGF-1
+4:activate_relation:EGR-1|SCLU
+5:activate_relation:ATM|IGF-1(not match perfectly)
+6:activate_relation:EXPOSED TELOMERE|ATM(not match perfectly)
+Inhibit:
+0:inhibit_relation:AAI|ATM(not match perfectly)
+1:inhibit_relation:AG1024|IGF-1R(not match perfectly)

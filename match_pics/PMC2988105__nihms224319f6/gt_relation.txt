@@ -1,0 +1,12 @@
+Activate:
+0:activate_relation:ATM|SER15
+1:activate_relation:NAG-1|APOPTOSIS(not match perfectly)
+2:activate_relation:OH|PKCdelta(not match perfectly)
+3:activate_relation:OH|ATM(not match perfectly)
+4:activate_relation:PKCdelta|P21(not match perfectly)
+5:activate_relation:NAG-1|APOPTOSIS
+6:
+7:activate_relation:NAG-1|APOPTOSIS(not match perfectly)
+Inhibit:
+0:
+1:inhibit_relation:P53|APOPTOSIS

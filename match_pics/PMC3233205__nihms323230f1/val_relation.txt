@@ -1,0 +1,21 @@
+Activate:
+0:activate:ERK2ERK1|7
+1:activate:RAF|MEK2MEK1
+2:activate:MEK2MEK1|6
+3:activate:4| PKC
+4:activate:9|PKA
+5:activate:PLCR|4
+6:activate:PKA|10
+7:activate:5|PLCR
+8:activate:8|ERK2ERK1
+9:activate: PKC|11
+10:activate:5|PIP2
+11:activate:3| PKC
+12:activate:8|RAF
+13:activate:8|MEK2MEK1
+14:activate:1| 2
+15:activate:10|11
+16:activate:9|RAF
+17:activate:RAF|ERK2ERK1
+18:activate:8|RAF
+Inhibit:

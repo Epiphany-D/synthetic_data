@@ -1,0 +1,11 @@
+Activate:
+0:activate:GLI|GLI
+1:activate:SMO|MYC
+2:activate:SMO|H
+3:activate:GLI|TARGET
+4:activate:MYC|GENES
+Inhibit:
+0:inhibit:SMO|SHH
+1:inhibit:HHANTAG|SMO
+2:inhibit:SHH|SMO
+3:inhibit:H|SMO

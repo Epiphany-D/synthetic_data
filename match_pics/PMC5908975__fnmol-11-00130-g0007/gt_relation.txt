@@ -1,0 +1,18 @@
+Activate:
+0:activate_relation:P-GP|CHEMORESISTANCE
+1:activate_relation: AKT|P-GP(not match perfectly)
+2:activate_relation:P53|APOPTOSIS
+3:activate_relation: AKT|ERK(not match perfectly)
+4:activate_relation:PAXILLIN| AKT(not match perfectly)
+5:
+6:activate_relation:CYCLIN D1|PROLIFERATION(not match perfectly)
+7:
+8:activate_relation:ERK|CYCLIN D1(not match perfectly)
+9:activate_relation:P53|APOPTOSIS(not match perfectly)
+10:activate_relation:P53|APOPTOSIS(not match perfectly)
+11:activate_relation:P53|APOPTOSIS(not match perfectly)
+12:activate_relation: AKT|MMP2(not match perfectly)
+13:activate_relation:MMP9|CELL ATTACHMENT(not match perfectly)
+Inhibit:
+0:inhibit_relation:P53|CYCLIN D1(not match perfectly)
+1:

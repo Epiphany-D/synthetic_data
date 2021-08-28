@@ -1,0 +1,16 @@
+Activate:
+0:activate_relation:ANG|ATIR
+1:activate_relation:LXR-A|ATIR/p38(not match perfectly)
+2:activate_relation: PFD|LXR-A
+3:activate_relation: PFD|LXR-A
+4:activate_relation:ACE|ANG
+5:activate_relation:ATIR/p38|ACE(not match perfectly)
+6:activate_relation:LXR-A|ATIR/p38(not match perfectly)
+7:
+8:
+9:activate_relation: PFD|LXR-A(not match perfectly)
+10:activate_relation: PFD|LXR-A(not match perfectly)
+Inhibit:
+0:inhibit_relation:ANG|MAS(not match perfectly)
+1:inhibit_relation:ACE2|ANG(not match perfectly)
+2:inhibit_relation:MAPK2|ACE2(not match perfectly)
